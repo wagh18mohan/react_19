@@ -1,0 +1,30 @@
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import {BrowserRouter} from 'react-router-dom'
+import './index.css'
+import App from './App.jsx'
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
+
+// if i use redux here it will applicable state management
+
+// import store from './component/redux/store';
+// import { Provider } from 'react-redux';
+
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <BrowserRouter>
+
+     <App /> 
+
+    </BrowserRouter>
+   
+  </StrictMode>,
+
+
+// if i use redux here it will applicable state management
+  //  <Provider store={store}>
+  //   <App />
+  // </Provider>,
+)

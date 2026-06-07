@@ -1,0 +1,77 @@
+import { useEffect, useState } from "react";
+
+
+export default function ApiCallDemo(){
+
+//    const [sateliteInfo, setSateliteInfo]  = {"customer_satellites":[{"id":"DLR-TUBSAT","country":"Germany","launch_date":"26-05-1999","mass":"45","launcher":"PSLV-C2"}
+//                         ,{"id":"KITSAT-3","country":"REPUBLIC OF KOREA","launch_date":"26-05-1999","mass":"110","launcher":"PSLV-C2"},
+//                          {"id":"BIRD","country":"GERMANY","launch_date":"22-10-2001","mass":"92","launcher":"PSLV-C3"},
+//                         {"id":"PROBA","country":"BELGIUM","launch_date":"22-10-2001","mass":"94","launcher":"PSLV-C3"}
+//                         ]
+//                     };
+
+
+                          // static data
+                    // const [sateliteInfo, setSateliteInfo]  = useState( [
+                    // {"id":"DLR-TUBSAT","country":"Germany","launch_date":"26-05-1999","mass":"45","launcher":"PSLV-C2"}
+                    // ,{"id":"KITSAT-3","country":"REPUBLIC OF KOREA","launch_date":"26-05-1999","mass":"110","launcher":"PSLV-C2"},
+                    //  {"id":"BIRD","country":"GERMANY","launch_date":"22-10-2001","mass":"92","launcher":"PSLV-C3"},
+                    // {"id":"PROBA","country":"BELGIUM","launch_date":"22-10-2001","mass":"94","launcher":"PSLV-C3"}
+                    // ]);
+
+                    const [sateliteInfo, setSateliteInfo]  = useState([]);
+
+                   
+                    useEffect(() => {
+                        fetch('https://isro.vercel.app/api/customer_satellites')
+                        .then(res => { return res.json()}).then((result) => {
+                          console.log(result);
+
+                        });
+                    }, []);
+
+                    // useEffect(() => {
+                    //     fetch('https://isro.vercel.app/api/customer_satellites')
+                    //       .then(response => response.json()) // return the parsed JSON
+                    //       .then(result => {
+                    //         console.log('result:', result); // log the actual data
+                    //       })
+                    //       .catch(error => {
+                    //         console.error('Error fetching data:', error);
+                    //       });
+                    //   }, []);
+                      
+
+                    //https://isro.vercel.app/api/customer_satellites
+                
+
+    return(
+
+    <>
+    <table className="table table-bordered">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>country</th>
+                <th>Launch Date</th>
+                <th>Mass</th>
+                <th>Launcher</th>
+           </tr>
+        </thead>
+        <tbody>
+            {
+                sateliteInfo.map((satelite, index)=>(
+                    <tr key={index}>
+                        <td>{satelite.id}</td>
+                        <td>{satelite.country}</td>
+                        <td>{satelite.launch_date}</td>
+                        <td>{satelite.mass}</td>
+                        <td>{satelite.launcher}</td>
+                         </tr>
+                ))
+            }
+        </tbody>
+    </table>
+    </>
+    )
+}
