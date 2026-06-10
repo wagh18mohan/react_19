@@ -1,0 +1,25 @@
+.row.pageheader {
+  margin-top: 30px;
+  .btn-group,.dropdown-menu{
+    margin-right: 10px;
+    button{
+      color:#fff;
+      background-color: black;
+      border: 1px solid #fff;
+    
+    }
+  }
+}
+.pagelogo{
+font-size: 24px;
+  svg{
+  width: 9.25rem;
+  height: 2.5rem;
+  color: rgb(229, 9, 20);
+  fill: currentColor;
+  display: block;
+  }
+}
+.buttoncontainer{
+  text-align: right;
+}

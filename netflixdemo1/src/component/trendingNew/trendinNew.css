@@ -1,0 +1,84 @@
+.trending-new{
+    h2{
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+.trendingSlider{
+    margin: 20px auto;
+    /* display: flex;
+    flex-flow: row nowrap; */
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    /* border: 2px solid #fff; */
+    padding: 20px;
+    
+}
+
+.dimentions{
+    margin: 10px;
+    width: 160px;
+    height: 220px;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    transition: transform 1s;
+    cursor: pointer;
+}
+.sliderTracker{
+    display: flex;
+    transition: translate 0.5s;
+}
+.dimentions:hover{
+    transform: scale(1.2,1.2);
+
+}
+.prevbtn,.nextbtn{
+cursor: pointer;
+color:red;
+background-color: yellow;
+width: 20px;
+height: 30px;
+position: absolute;
+}
+.prevbtn{
+    top: 115px;
+    left: -1px;
+    z-index: 99;
+}
+.nextbtn{
+    right: -1px;
+    top: 120px;
+}
+/* .one{
+    background-image: url('../../assets/trending/one.webp');
+}
+.two{
+    background-image: url('../../assets/trending/two.webp');
+}
+.three{
+    background-image: url('../../assets/trending/three.webp');
+}
+.four{
+    background-image: url('../../assets/trending/four.webp');
+}
+.five{
+    background-image: url('../../assets/trending/five.webp');
+}
+.six{
+    background-image: url('../../assets/trending/six.webp');
+}
+.seven{
+    background-image: url('../../assets/trending/seven.webp');
+}
+.eight{
+    background-image: url('../../assets/trending/eight.webp');
+}
+
+.nine{
+    background-image: url('../../assets/trending/nine.webp');
+}
+.ten{
+    background-image: url('../../assets/trending/ten.webp');
+} */

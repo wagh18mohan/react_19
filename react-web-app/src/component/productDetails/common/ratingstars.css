@@ -1,0 +1,14 @@
+.fullStar,.halfStar,.disableStar{
+background-image: url('../../../assets/RatingStars.png');
+width: 43px;
+height: 39px;
+}
+.halfStar{
+background-position: 90px 0px;
+}
+.disableStar{
+    background-position: 46px 0px;
+}
+.ratingcontainer{
+display: flex;
+}
