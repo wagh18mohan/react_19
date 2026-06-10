@@ -1,0 +1,4354 @@
+(session:45(46min js will start))
+- A script is a program.
+- every programming lang. need preprocessor but js no need.
+- browser is responsible for runing js program.
+- js run when event is trigger i.e click or on page loading. 
+- ecma script invent new feature and that feature is implement by js
+- cross platform: run all browser and devices.
+- it is single threded
+- logic run one by one is called single therded program
+- js is object baseed or prototype based programming
+- java , c++ object oriented programming
+- in prototype we dont need to create class we direct create object .ie object 
+  based or protoyped based
+- in java first create class then object of that class .i.e. oops
+- every lang required virtual machin i.e vm
+- JS EE - javascrpt exicution engin i.e vm
+- js is used to develop interactive web pages
+- js also write in  inline, internal , and external 
+- in inline only one js code we can write
+- document is a predefined object and (document.write())
+- write() is predefind method
+- we can write any number of script.
+- we can write script in head or body section
+- exicution is top to bottom
+- js program is exicuted while page loading or event trigger
+- code should be type in the form of function/ block /constructor /class. 
+- function defination in js, and function calling in html file
+- two type of comment single line and multiple line //, /*  */
+
+- js is object based programming language.
+- object is instance of class (dynamic memory block)
+- object is group of properties(store data) and method(oprations)
+- objects are use to communicate/ itneract with some thing i.e other component.
+  eg. document.write() here document is object, write is method.
+   by using write method we can write or print data on web page 
+   (here writing is an opration).
+
+- js provide predefind object or default (around 9 object) 
+ - whenever the page is open or loading at the same time  object are automatically created 
+ - window, document, console.
+ - window  represent :> browser, document represent :> document,
+   console represent :>  debugger area.
+   window.document.write()
+   window.console.log()
+  // widow is optional no need to write
+
+ //  window object take whole info about browser
+ //  document object take whole info about webpage
+ //   console object take whole info about console
+
+   we have method use to print on web webpage 
+
+ //  document.write() (without line break ), 
+ //  document.writeln(),(withline break) ,  ln :> line break
+ //  console.log() : f12 key, ctrl+shift+j, inspect option > 
+
+ -  js is case sensetive.
+ -  js error always display on console.
+ -  
+ -  five errror in js.
+ - typeError, reference error, range error, URI error, syantax error,
+    (eval error (outdated error))
+ - memory relates issue, (reference error)
+ - ` ` this is backtic oprator use instead double cote (" ")it is ecama secript comes.
+
+ - literals.
+
+ - string literals (( "", '', qoute) js), templet literals ( ` ` backtic oprator(ecama))
+ - all are  represnt string or text  data.
+ - string literals allow only one line of text, 
+ - templet literals multiple line of text 
+ - string literals not support interpolation
+ - templet literals support interpolation
+ - in js we can not write html and css directly.
+ - we requird string literals or templet literals.
+ - 
+- variable is reference name of a memory block.
+-   3 keywords used to declare variable var, let, const.
+- var varname; // declaration.
+- var varname= value; // initialization.
+- we can declare variable in 
+-open script (global variable)  <script>var </script>
+
+- within function (local variable) functionfin1(){ var... }
+- within block (block variable) for (var){....}
+- default value of variable is undefined
+- after variabel initialization we can modify the value.
+- you can not modify const value
+- const variable can be write in capital letter.
+   e.g const PI 3.14;
+- const declaration not support i.e const x;
+-  
+ variable store any type of data is called as loosly typed 
+ e.g var x=4;, var x="ram";, var x = true; etc.
+
+- dynamically declared variable.
+e.g x=10; document.write(x);
+- js responsible for declaring tat varible (js parsing responsible)
+- every dynamic variabel stored in window object
+- var vs let
+- both use for variable declare
+- both allow initialization, declaration, modification.
+- var use genarrly for external or gloval declaration,
+- let use genarrly for local or block variable declaration
+ - var support redeclaration,
+ - let not support redeclaration,
+ - var support hoisting,
+ - let not support hoisting,
+
+ var n=100;
+document.writeln(n + "<br>");
+
+n=200; // modifing value or assigning value
+ var n ="mohan"; // redeclaration or redefination 
+
+ - in redeclaration same variable name with diffent data type is called as redeclaration
+
+- hoisting
+
+- normally we declaring variable first then use it but,
+(utilization first then declaration)
+- but use first then declare is called hoisting
+
+e.g x =100;
+ document.writeln(x + "<br>");
+  var x;
+ -  var , array, object : are hoisted.
+ - class not hoisted.
+
+// directly data type is not available in js. it internally avilable
+
+ - primitive datatype, non primitive datatype
+ - pdt:   storing data directly        non-pdt: store reference/address (id)
+ - store one value at a time           - n values (array/obj)
+ - store in stack area                 - store in heap area (both are in ram area)
+ - not sharable                        - sharable
+ - predefind                           - user defined data type
+
+  var, let, const                          var,let, const + new/[],{}
+   string, number, boolean,            - array , class & object, function
+   undefined, null(obj)
+
+ - typeof var-name. (it show datatype of variable (typeof by using this keyword)) 
+ e.g
+      var a=100;
+
+      document.write(typeof a) ; 
+
+ - oprators
+
+ - oprator is symbol
+ - a symbol they prforming some opration is called as oprator.
+ - 40 oprator divide in 3 categaries
+
+ - unary,: increment, decr. (requird one oprands)
+ - binary,: (requird two oprands)
+           - artimatic, relational, logical, assignment, caoncatination
+ - ternary : (requird 3 oprands)  
+
+ - !==, stict not equal, != , not equal
+ -  logical oprator && , ||, ! (and , or, not)
+ - for output logical oprator uses truth table only.
+ - for multiple condition check use logical oprator.
+ -   assignment oprator used storethe data.(=)
+ 
+ - shorhand oprator.(combination of artimatic and assignment oprator)
+    (+=, -=, *=, /=, %=, **=,)
+
+    e.g x+=30     // x=x+30; 
+
+    // concatination oprator (+) (use to combine two or more string)
+
+- need at least one valu should be string. otherwise it will not work.
+
+    document.write("ram " + "warn");
+
+-   // unary oprator  increment/decrement
+
+- ternary opratory (conditional oprator)
+
+               T    F
+- condition ? step1:step2
+- more than one step not allowed.
+
+// expression 
+
+document.write(10-20*5+100%30)
+
+ - order of exicution. (Order of Operations (PEMDAS):)(oprator precidence)
+ - computer dont follow bodmas rule.
+ Order of Operations (PEMDAS):
+ eg.
+Parentheses: None here, so move to the next rule.
+
+Exponents: Not applicable.
+
+Multiplication, Division, Modulus (from left to right):
+
+Calculate 20 * 5: 20 * 5 = 100 Now the expression becomes: 10 - 100 + 100 % 30
+
+Calculate 100 % 30 (remainder of 100 divided by 30): 100 % 30 = 10 Now the expression becomes: 10 - 100 + 10
+
+Addition and Subtraction (from left to right):
+
+First, 10 - 100: 10 - 100 = -90
+
+Then, -90 + 10: -90 + 10 = -80
+
+Final Result = -80
+
+-- when you performing incompatible datatype opration output will be NAN.
+
+--// 3 dialog box; or 3 functions (all are  global function)
+-  total 9 function avilable
+
+-   alert box: display some information to user.
+   e.g alert("hi");
+
+- confirm box: takeing confirmation form user.( delete or update)
+- it have two button ok or cancel button.
+  e.g confirm("msg");
+
+-  prompt box:  it will take input valus from user
+e.g prompt("some text ", default value);
+
+- parsing (it will work only for string)
+- two type of parsing.
+
+- changing data from string  to number format.
+- if your expression contain any one of the following oprator then system 
+   will perform autoparsing.
+
+- (1) auto parsing (implicit) (system performing parsing)
+- all types of sub, mul, div, incri.
+- // manual parsing (explicit) (we have tow parsin option 
+   1. with support of funtion, 2. with support of parse oprator)
+ //    - a.using function-
+     (we can not parse original string to number) only number string is 
+    parseInt("10") // predefind finction provide by window object
+    parseFloat("") // predefind finction provide by window object
+
+
+- //  - a.using parse oprator (+)
+
+ - + is paser oprator (it uniry oprator, ii use oly left side)
+
+ e. +"value" or +variable
+   - +"10"  => 10.
+
+- tip : in computer data always  comes in string format. so we need to parse data.
+ - actully it come in binary O.S  convert binary to string . 
+
+// control statement.
+
+- control statement is used to control the execution order of a program, 
+  based on user input  data.
+- 3 type of control staement.
+- conditional statement (if,switch)
+ - if contain annymous block, (block without name called anonnyms block)
+ - switch is basically selection statement.
+   switch(var/expr)
+   {
+    case value: statement..
+        break;
+    case value: statement..
+        break;
+    case value: statement..
+        break;
+    case ...
+    default: statement ...   
+   }
+
+
+   - switch run fast as compaire to if condition
+   - it will compaire one condition then exit., not checking every condition.
+   - n number of case we can write
+   - break we can use as per cindition demand.
+   - break and default is optional.
+   -case is compulsary.
+   - if break not given it will exicute afeter true case all statement is exicuted.
+   - break is stop exicution after case success.
+   - js allow any datatype for switch (other language not allowed all datatype)
+  - js supports conditions.
+  - 
+
+ - simple if, if else, if else if(ladder if)
+- loops(iteration): for, while, do while,
+
+- repeateadlly performing same condition untill condtition false.
+- loop are use to avoid the code redudancy.
+- tip: number of iteration depends upon the steping value (i++, or i+2)
+- 
+- multilevel condition (if else if (ladder if i.e shidi))
+- tip : if you dont have more than one statement no need to use { }  brace.
+- tip: after else condition should not write
+
+// src, width, height, alt, title, borderd .(img attribute)
+//(58 session)
+- (when you want to perform equal or not equal to comparison should use ternary oprator)
+// when use which  best practice
+// ?: => one step opration true or false
+
+// switch: when u want perform equal or not equal oprataions. situation use switch case
+
+// if : use other all case expect above two case.
+
+//  unconditional(branching): break, continue, and return 
+
+- break is used to stops remaining all iteratios/block
+- if not suport break.
+- loops suprt break.
+
+- continue  stops current iteration and move to next iteration
+- if and switch not suports.
+- only loops supports.
+
+
+ /// interpolation.
+
+ - substituting  dynamically variable /exp/fun-call in between  string 
+ - oprator is ${}.
+ - string should be enclosed with in backtic (``), 
+   but not " " and ''.
+ - it comes in echma
+
+ syntax:
+ ${var}   ${expr} ${fin call}
+
+    `text ${var}   ${expr} ${fin call} ..`
+
+  - use : while printing data & assigning value to variable.
+
+  - new way to variable assigning.
+
+  //sesion 60.
+  // array
+  - array is collection of elements (values)
+  - storing group of values with same name.
+  - in array we can store similar type of data as well as diffent type of data.
+  - store in heap area. (non primitive datatype).
+  - primitive datatype store data in stack area
+  - array maintain the data in sequence order. 
+  - Array is non primitive datatype
+  - every non primitive datatype store in referce variable.
+
+  - Array creation:
+  -(1) by using literals ([]) (array literals) and  (`` called templet literals )
+  let/var/const arr-name = [];    // array declaration
+  let arr-name = [val1,val2,....];  // arry initialization
+
+- 2nd approach (using new and constructor)
+   (if first letter is capital called constructor)
+- var arr_name = new Array(); 
+- var arr_name = new Array(val1,val2,....); 
+
+// functions are use for logical opration,
+- constructors are use  for memory allocation.
+-- (1)accessing array
+   arr_name[index];
+
+ -- (2)set value to array. or modify the data of array.
+
+ - arr_name[index] =value
+
+ - (3)size of array.
+  -arr_name.length  // predefined property, it return size of array.(size is no. of cell)
+  - arr_name.length-=N;  // it reset the array size
+
+  - tip :array store data dyanmicaly means it will add data one by one automatically
+  -   as per data storing array adjusting automaticaly called as dyanmic data storing,
+  - for aplying logic on array we use genarlly use loop.
+  - tip: // when you work with non - primitive data always use const instead let or var.
+
+e.g,
+//    <!-- dynamic array size -->
+  - normally, according to situation it will adjust is called as dyanmic     
+
+             const b = [10,20,30,40,50,60,70,80,90]; // 
+            document.write(`${b} <br> `);
+            b.length=5; // reduce size
+             document.write(`${b} <br> `);
+            b.length=7; // increease size
+            document.write(`${b} <br>`);
+            b[5]=11;
+            b[6]=22;
+             document.write(`${b} <br>`);
+
+ - arr-name.length=0;// it will delete array
+- const is used to store data without modifing name,
+- but data can be modifide
+-  array is allowing modification in const declaration
+
+ ///note: where is the first cell of array is store that location is store in refvar name.
+
+         001    001 007  005  // adrress of elment in memory (it asumption)
+ eg. const b = [10,  20, 30]
+##
+  // constant array
+          const b = [10,20,30];
+           document.write(`${b} <br>`);
+           b[1]=22;  // it modify value that allowed
+
+
+             document.write(`${b} `);
+             const b = [13,20,30,40]; // this not allowed its constant
+            document.write(`${b} `);
+
+- in js we store both homgeneous and heterogenous both data, but in other only 
+  homgeneous, for heterogenous required more effort.
+
+-/// Array associative
+
+- if you use a named index when accessing an array called as array associative.
+- instead number index used name inedex called associative array.
+- note: if use named array some method not work like length.
+
+a['x']=10;    
+a['y']=20;
+a['z']=30;
+
+
+- e.g
+  //    <!-- associative array -->
+          
+             const b = []; // 
+             b['x']=10;
+             b['y']=20;
+             b['z']=30;
+
+             document.write(`${b} <br>`);
+             document.write(`${b['x']} <br>`);
+             document.write(`${b['y']} <br>`);
+             document.write(`${b['z']} <br>`);
+             b['y']=22;// modification
+              document.write(`${b['y']} <br>`);
+
+
+-## Multidimentional array.
+- tip: in js string means array or array means string .
+
+- arry within array called multidimentional arry,
+- in genarrlly it is nested arrays.
+syntax:
+ const b= [
+                [...],
+                [...],
+                [...]
+             ];
+
+    e.g1  <script>
+        //    <!-- multidimentianal  array -->
+            
+             const b = [   // 0 1  2
+                            [10,20,30], //0
+
+                            // 0 1 2
+                            [40,50,60] // 1
+
+                            // 0 1 2
+                            // [50,60,70]  // 2
+                        ]; 
+               
+
+            
+            document.write(`${b} <br>`);
+            document.write(`${b[0][1]} <br>`); // this way we print  data
+             document.write(`${b[1][1]} <br>`);
+            //  document.write(`${b[2][1]} <br>`);
+
+    //  by using loop
+
+    for (let i=0; i<b.length; i++)
+    {
+        
+        for(let j=0; j<b[i].length; j++)
+        document.write(`  ${b[i][j]}`);
+        document.write(` <br>`);
+    }
+    console.table(b);
+    </script>
+ note: no need to nested array have same size. it can any.
+
+- group of arry is called as multidimentional or nested array.
+- console.table(arr_name); // display data in table format
+
+## for in/off loop // ecama script feature. fetching index 1 by 1
+ - these loop specially designed for arry or collection object only.
+syantax:
+
+- for in loop called as index base array
+- data maodification  possible
+- it extract index one by one index and assign to temp variable
+- it will giving the index.
+
+for(temp-var in array/collction object){
+  steps a[temp-var]
+}
+- this loop supports in two scenario  array/collction object.
+
+e.g
+ // for in it will collect index.
+// 1.find the sum of the array, 2. find min of the array, 
+   3. find the max of the array
+// 4. find the avg of the array.
+// all logical opration can implimented on array
+e.g
+ const a = [ 12,45,77,99];  
+      
+       for(let i in a){
+        // document.write(`${i} => ${a[i]} <br>`);
+        a[i]+=1; // modification possible
+        document.write(`${i} => ${a[i]} <br>`);
+      
+       }
+       
+       let st='apple';
+       for(let i in st){
+        // document.write(` ${st[i]} <br>`);
+        document.write(`${i} => ${st[i]} <br>`);
+       }
+-----------------------------------------------------
+ - for of  loop called as element base array
+
+- data maodification not possible
+- for of loop. fetching elems 1 by 1.
+- is valuse base loop.
+- 
+syantax:
+
+for(temp-var of array/collction object){
+  steps temp-var
+}
+
+
+ const a = [ 12,45,77,99];  
+      
+       for(let e of a){
+        document.write(`${e} <br>`);
+      
+       }
+       
+       let s=0;
+       for(let e of a){
+        // document.write(` ${st[i]} <br>`);
+        document.write(` ${e}  <br>`);
+        s+=e;  // it will print sum of array
+       }
+       document.write(`sum is => ${s} <br>`); // it will print sum of array
+    
+////
+
+ // diff bet in an off
+        let st='apple';
+       for(let i in st){
+        // document.write(` ${st[i]} <br>`);
+        document.write(` ${i} <br>`);
+       }
+
+       //
+    
+       for(let i of st){
+        // document.write(` ${st[i]} <br>`);
+        document.write(` ${i} `);
+       }
+       
+// note: both loop use for string array an collection object only
+// these lopps use for string, aarry,collection object.
+// both loop  devlope for only for this
+
+
+// spread oprator.
+
+- ' ...' // spread oprator
+- it is unary oprator
+- this oprator as prefix.
+- it represent all remaining values of arry/coll. object.
+- it substitute or add total all elements of  arry
+- we can easily copy  data of one array to other array.
+- it copy elemt of arry
+syantax  it will use for ...arry, or ... collction obj.s
+- ...arry, // 
+- ... collction obj.
+
+ <script>
+ // we can not copying data from non-primitive data.
+ 
+
+ const a = [ 10,20,30];  
+
+ let b=[]; 
+      b=a;  // it copy reference not data.
+        // here a having adress we copy a to b that is we copy reference variable
+      // both b and a having same adress and this is wrong.
+note : these type of technique is usefull for pramete not for array
+      // in non primitive data type data coping is not possible.
+    
+      document.write(` A ${a} <br>`);
+      document.write(` B ${b} <br>`);
+       
+      // 
+
+      const p = [ 10,20,30];  
+
+ let q=[...p]; // it copies elements.
+    //   b=a;  // it copy reference not data.
+      
+      document.write(` A ${p} <br>`);
+      document.write(` B ${q} <br>`);
+       
+      // 3
+
+      // i want merge 3 array.
+
+      const ft=['html','css','js','bs'];
+      const bt=['java','python','DotNet'];
+      const db=['oracle','mysql'];
+
+      const fs=[...ft,...bt,...db]; // array merge
+
+      document.write(` fs => ${fs} <br>`);
+      const fs1=[...db,...ft,...bt]; // array merge
+      document.write(` fs => ${fs1} <br>`);
+
+      const fs2=[...db,...ft,'react',...bt,'node']; // array merge with indpendent values
+      document.write(` fs => ${fs2} <br>`);
+      document.write(` fs => ${fs2.length} <br>`); //11
+
+   </script>
+
+\\\ destructring aaray. (dividing)
+
+// we have two destructuring, array destructuring and object destructring
+- it is coding technique.
+
+// it is ecama script concept.
+
+- copying one by one aaryy elemnt into other variable. js6
+- (part by part removing called)
+
+  <script>
+ // we can not copying data from non-primitive data.
+ 
+
+ const a = [ 10,20,30];  
+
+//   let  x=a[0], y=a[1], z=a[2];
+
+  let [x,y,z] =a ; // array distructring
+
+  document.write(`x ${x}<br>y ${y} <br>z ${z}<br>`)
+
+
+  // demo onstring distructuring
+// it copy data on position base 
+  const eles=['html','css','js','bs','ajax','jquery','angular','react'];
+
+  let [i,j,k]=eles;
+  document.write(`i ${i}<br>j ${j} <br>k ${k}<br>`)
+
+  // skiping some element from aary
+
+  let [p,,q]=eles;     //give empty quama it will skip that posiion element
+
+  document.write(`p ${p}<br>q ${q} <br>`)  //css skiping.
+
+  //
+let [p1,,,...q1]=eles; 
+document.write(`p1 ${p1}<br>q1 ${q1} <br>`)  //distructuring  with spread array
+  
+  note:
+  x=10 // here x is storing 10
+   y= x // here  x is substitute in y.
+   ie. left side storing and right side substituting.
+
+// p1 contain one element and q1 contain all value except skiping.
+   </script>
+
+//// swaping 
+
+// swaping (exchangeing value called swaping)
+// it is process exchange value without creating third variable.
+// two varaible exchanging there values.
+
+let v1=100, v2=200;
+[v2,v1]=[v1,v2]; // swap
+
+document.write(`v1 ${v1}<br>v2 ${v2} <br>`)  //
+
+
+-- session 62  32.19 min start
+// array method 
+
+mehtods are used to perform opration on arrays,
+- without writing our own logic,
+- predfined method logic already defind we need to use only,
+- every method have their own logic or have functionality, 
+
+1 (push and pop)
+
+- push method used to store the data at the end of the array (row) or 
+at the top (column) of the array
+- pop is used to retriving (end of the array)or 
+ fetching (top of the array) the data from the array 
+- when it is fetching the data it is remove the data. 
+
+// //2 shift and unshift
+- store the data  or retrive data at the starting  the array or bottom of the array 
+
+- shift == pop,
+- unshift == push
+//// data stroring and retriving an array approaches.
+
+push & pop                       ushift   & shift                  index
+end / top   
+ <script>
+    // push and pop
+    //add or remove element  end or top
+    // more than one element we can push, but not pop multiple element at time 
+    // eles.push(10,20,30).
+ const eles = [];
+ eles.push(10);
+ eles.push(20);
+ eles.push(30);
+ eles.push(40);
+let push_elm=eles.push(50); // push_elm return how many element is push
+
+document.write(`push method ${eles}<br>`);
+document.write(`push element ${push_elm}<br>`);
+
+// eles.pop();
+let pop_ele=eles.pop();
+
+document.write(`pop method ${eles}<br>`);
+document.write(`pop ele ${pop_ele}<br>`);
+
+
+
+// shift and unshift
+//add or remove element start or bottom
+
+const eles1 = [];
+ eles1.push(10);
+ eles1.push(20);
+ eles1.push(30);
+ eles1.unshift(9);
+ eles1.unshift(8);
+
+
+
+document.write(`unshift method =>  ${eles1}<br>`);
+eles1.shift();
+
+document.write(`shift mehtod =>  ${eles1}<br>`);
+eles1.unshift(5,6,7,8); // multiple valuse can be added at a time
+                        // 
+
+
+
+document.write(`unshift multiple item method =>  ${eles1}<br>`);
+   </script>
+
+   ======================================================================
+   // 3 way we can add or retruve the element .
+  push and pop                shift $ unshift                     index
+    end/top                    begin / bottom                    random
+=========================================================================
+/// logincal array mehtod.
+// manipulation on array possible but on string not posible.
+- note: array data type change is possible but string data type not possible,
+- includes, indexOf, lastindexof, reverse, sort, tostring, join method
+
+-tip:  anonnyms is use for to privent the wastage of memory 
+    - memory efficiency utilization. it increse performance 
+
+-- // searching methods
+
+- 1. // includes
+// it seraches given element is availabel in the array or not (true or false)
+  
+  <script>
+        //    <!-- includes, indexOf, lastindexof, reverse,
+        //    sort, tostring, join method -->
+      
+const eles =[10,20,30,40,50,60,80,30,90,30];
+let str= "notepad plus plus";
+
+
+document.write(`eles => ${eles} <br>`);  //
+document.write(`str => ${str} <br>`);  //
+
+// includes()
+// it seraches given element is availabel in the array or not (true or false)
+
+   document.write(` includes 20? ${eles.includes(20)} <br>`);
+   document.write(` includes 55? ${eles.includes(55)} <br>`);
+
+   document.write(` includes plus ? ${str.includes('plus')} <br>`);
+   document.write(` includes is ? ${str.includes('is')} <br>`);
+   document.write(` includes p ? ${str.includes('p')} <br>`);
+
+   // anonyous arry and string use
+
+    document.write(` anonnymous => ${[10,20,30].includes(10)} <br>`);
+      document.write(`${"apple".includes(p) }<br>`);
+     
+    </script>
+ -  what is use of anonymous.?
+ - without reference variable name.called anonnyms
+ e.g [10,20,30]
+     "apple"
+ - to privent the wastages of the memory. (use and throw policy)
+ - for memory efficiency 
+
+//2 indexOf()
+it find first occurence of element.
+// method also use for searching element , it return index number,
+// if not  found -1 return ,if more than elemment found it will return first occurance,
+// start searching from 0th index number
+// you can set serach from perticular position , by giving second value as index number.
+
+  document.write(` incldes 20? ${eles.indexOf(20)}<br>`); // 1
+ document.write(` incldes 55? ${eles.indexOf(55)} <br>`); // -1
+ document.write(` incldes 20? ${eles.indexOf(20, 3)}<br>`); // 1
+
+ - ${eles.indexOf(20, 3)} here 3 is starting searching posintion.
+
+// 3 lastIndexOf()
+ // lastIndexOf()
+  document.write(` lastIndexof 30? ${eles.lastIndexOf(30)} <br>`);
+// it find last occurence of element.
+
+// 4.reverse()
+// it reverse all the element, only arry support, not string suport
+// it will take original array and reverse the array and return with 
+   overriting in same arrray.
+// 4.reverse()
+
+document.write(` reverse ${eles.reverse()} <br>`);
+
+//5 sort()
+// sorting of element, 
+// if number sort ascending order,
+// if string sort alphabetical order.
+// it override in  same array.
+
+tip : if you want to descinding order number , 
+      first sort then use reverse mehotd it will show num in descending order
+
+//6 toString()
+// is default method, it always work in background
+// whole data convert in string 
+// it return array values as a single value.
+e.g inconsle
+eles
+(12) [10, 20, 30, 30, 30, 30, 40, 50, 60, 70, 80, 90]
+eles.toString
+ƒ toString() { [native code] }
+eles.toString()
+'10,20,30,30,30,30,40,50,60,70,80,90'
+
+// 7 toJoin()
+// jointg of elements, but in this we decide which valeud you want to join 
+  - [10, 20, 30, 30, 30, 30, 40, 50, 60, 70, 80, 90] in this quama delimeter by default use
+  - suoppse you want add instead other like html tag ,symbol, emoji symbol you can add too.
+///
+//toJoin
+document.write(` sorting =>  ${eles.join('<h2>')} <br>`);
+    document.write(` sorting =>  ${eles.join('.')} <br>`);
+  <script>
+ 
+ const eles = [10,20,30,40,50,60,30,70,80,30,90,30];
+ let str = "notepad plus plus";
+
+ document.write(`Eles => ${eles}<br>`);
+ document.write(`Str => ${str}<br>`);
+
+
+ // searching methods
+ //1. includes
+ // it wiil serch elemnt by word or elemen it will give trur false
+
+ document.write(` incldes 20? ${eles.includes(20)}<br>`);
+ document.write(` incldes 55? ${eles.includes(55)} <br>`);
+
+ document.write(` incldes plus? ${str.includes('plus')} <br>`);
+ document.write(` incldes test? ${str.includes('test')} <br>`);
+
+ //anonymous check
+// if reference variable is not available use anonymoues 
+
+  document.write(` anonymous incldes   20? => ${[10,20,30].includes(20)}<br>`);
+  document.write(`anonymous incldes => ${"notepad plus plus".includes('test')}<br>`);
+ 
+
+  // 2. indexOf 
+// const eles = [10,20,30,40,50,60,30,70,80,30,90,30];
+
+  document.write(` index 40? ${eles.indexOf(40)}<br>`); // 3
+ document.write(` index 55? ${eles.indexOf(55)} <br>`); // -1
+ document.write(` index 20? ${eles.indexOf(40, 5)}<br>`); // 1
+
+ document.write(` index plus? ${str.indexOf('plus')} <br>`); // 8
+ document.write(` index test? ${str.indexOf('test')} <br>`);//-1
+
+// 3 lastIndexOf()
+
+document.write(` lastindex 30? ${eles.lastIndexOf(30)}<br>`); // 11
+ document.write(` lastindex 55? ${eles.lastIndexOf(55)} <br>`); // -1
+ document.write(` lastindex 20? ${eles.lastIndexOf(40, 5)}<br>`); // 3
+
+ document.write(` lastindex plus? ${str.lastIndexOf('p')} <br>`); // 13
+ document.write(` lastindex test? ${str.lastIndexOf('test')} <br>`);//-1
+
+ //4 reverse
+
+ eles.reverse();
+ document.write(` reverse ${eles}<br>`); // [30,90,30,80,70,30,60,50,40,30,20,10]
+
+// splilt mehtod('') seprate each chareter separtly then we can reverse string.
+
+str.split('');
+(17) ['n', 'o', 't', 'e', 'p', 'a', 'd', ' ', 'p', 'l', 'u', 's', ' ', 'p', 'l', 'u', 's']
+str.split('').reverse();
+
+// you can split text based on chareter, 
+str.split('p');
+
+ //5 sort()
+ eles.sort();
+ document.write(` sort ${eles}<br>`); // 10,20,30,30,30,30,40,50,60,70,80,90 (ascending ordr)
+
+ const names=['mohan','pavan','dipak'];
+ names.sort();
+ document.write(` sort ${names}<br>`); //
+
+ //6 toString()
+ document.write(`tostring ${eles}<br>`);
+
+// 7, toJoin
+
+document.write(` join ${eles.join('&#128556;')}<br>`);
+document.write(` join ${names.join('<br>')}<br>`);
+document.write(` join ${names.join('<h3>')}<br>`);// every elemnet comes in h3 tags
+
+
+   </script>
+////
+
+//8 splice()
+
+// method use to perform array manipulation
+
+// manipulation means update, insert, delete the data.
+
+// deletion
+// splice(start-index, count(no. of element delete)),
+
+//updation
+//splice(start-index, count(no. of element delete),new element),
+
+//insertion
+//splice(start-index, count(count must be zero),new element),
+// delete 0 meanse no value delete
+e.g.
+        <script>
+ // splice() method
+// splice(start-index, count(no. of element delete)),
+
+const eles=[10,20,30,40,50,60,70,80,90];
+const names=['mohan','wagh','pavan'];
+
+document.write(`${eles} <br>`);
+document.write(`${names} <br>`);
+
+// deletion
+// splice(start-index, count(no. of element delete)),
+//updation
+//splice(start-index, count(no. of element delete),new element),
+
+//insertion
+//splice(start-index, count(count must be zero),new element),
+// delete 0 meanse no value delete
+
+let t= eles.splice(1,2);
+document.write(`afetr deletion ${eles} <br>`);
+document.write(` which dat delete${t} <br>`);
+
+let t1= names.splice(1,1);
+document.write(`afetr deletion names ${names} <br>`);
+document.write(` which dat delete${t1} <br>`);
+
+//updation
+//splice(start-index, count(no. of element delete),new element),
+
+//insertion
+//splice(start-index, count(count must be zero),new element),
+// delete 0 meanse no value delete
+
+let t2= eles.splice(1,2,44,55);
+document.write(`afetr updation ${eles} <br>`);
+document.write(` which data update${t2} <br>`);
+
+let t3= names.splice(1,1,'dipak');
+document.write(`afetr updation names ${names} <br>`);
+document.write(` which data update${t3} <br>`);
+
+//insertion
+//splice(start-index, count(count must be zero),new element),
+// delete 0 meanse no value delete
+
+let t4= eles.splice(4,0,100);
+document.write(`afetr insertion ${eles} <br>`);
+document.write(` which data insert${t4} <br>`);
+
+let t5= names.splice(1,0,'pavan');
+document.write(`afetr insert names ${names} <br>`);
+document.write(` which data insert ${t5} <br>`);
+
+// slice()
+
+   </script>
+
+// 9 slice()
+ // slice() method
+// one array divide into multiple arry
+// slice(start-index, end-index) (end index take n-1 )
+// if you not given end index it will slice upto end
+// if you give negitive number it will extract data from ending side of array.
+
+  <script>
+ // slice() method
+ /// it used slicing of the array
+// one array divide into multiple array
+// slice(start-index, end-index) (end index take n-1 )
+// if you not given end index it will slice upto end
+const eles=[10,20,30,40,50,60,70,80,90];
+const names=['mohan','wagh','pavan'];
+
+let a1=eles.slice(0,4); // (end index take n-1 ) 4-1
+let a2=eles.slice(4);
+
+document.write(` a1 => ${a1} <br>`);
+document.write(` a2 => ${a2} <br>`);
+document.write(` a2 => ${eles.slice(-1)} <br>`);// 90 it work from last side ot right side
+// negative index return array last elment.
+document.write(` a2 => ${eles.slice(-2)} <br>`);//80, 90
+
+//tip:  there is no -0 in world so we use -1
+
+for (let i=1; i<=eles.length; i++){
+    document.write(`${eles.slice(-i)} <br>`);
+}
+
+// 
+for(i=8; i>=1; i--){
+    document.write(`${eles.slice(-i)} <br>`);
+}
+
+// string
+
+
+   </script>
+
+   ////////////////////// data stroring and retriving data from user dyanmic programe
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=?, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--js practice  -->
+
+   
+  <div align="center">
+    <h4>demo on array  dyanmic data comes in array method</h4>
+   
+  </div>
+   
+  <input type="text" id="n"name="n" placeholder="enter any number">
+  <br><br>
+  <button  onclick="addElement()">Add Element</button>
+  &nbsp;
+  <button  onclick="display()">View Element</button>
+  &nbsp;
+  <button  onclick="deleteAll()">clear Element</button><br><br>
+
+  <strong>Elements:</strong><br>
+
+  <output id="op"></output>
+
+   <script>
+ // slice() method
+
+ // global aarrray
+
+ const data=[]; // array declaration
+
+//add data
+ function addElement(){
+    let e=+n.value; // shorthand way to convert a string into a number. called  parsing
+   //or let e = +n.value.trim();// Removes accidental spaces before converting.
+
+    if(!isNaN(e)){  // this condition heleps to add only numeric value 
+         
+       data.push(e);
+        n.value="";
+        n.focus();
+    }
+    
+ }
+ //or
+//  function addElement() {
+//     let e = parseFloat(n.value.trim());
+//     if (!isNaN(e) && n.value.trim() !== "") {  
+//         data.push(e);
+//         n.value = "";
+//         n.focus();
+//     } else {
+//         alert("Please enter a valid number.");
+//     }
+// }
+//Prevents accidental empty entries.
+
+//Alerts the user when an invalid value is entered.
+
+ // display
+ function display(){
+    op.value=data;
+ }
+
+ // delete
+ function deleteAll(){
+    data.splice(0, data.length);
+
+    // or data.length=0    // this also delete data
+
+    op.value=""; // it will clear scrren data
+ }
+
+
+
+   </script>
+</body>
+</html>
+
+   ///////////////////////////////////////////////////////////////////////////////////
+
+//// map and filter will explain after function.
+
+** // function (64 session)
+- we have two type of function
+- 1. predefinde function or library function.
+  i.e alert(), propt, confitm 
+- 2.user defefined function
+- fun. is named block, and block contain number of statement.
+- function is used to perform perticular task or opration.
+- it is a block of code   
+- it is reusable.
+
+- method also work like function
+
+- 4 type of function
+1. Named function,
+2  expressional function.
+3. arrow fun.
+4  IE/II function.
+
+we can creat furntion either  intrnally or external js,
+not in inline .
+
+- 1. Named function,
+syn: -parameter seprated by quama
+- parameter is used transfer the data from one place to another place
+- parameter use for data transfer.
+- no need let/var/const. for parameter.
+
+- source / sender function called as parameter/ actual parameter
+- destination or receiver function called as argument/ formal parametr.
+
+- destination  send data to  source data comes in return statement
+ -return statement used when data come from destination to source,
+ - parameter used for send data from source to destination
+
+ - function or method can return only one value.
+ - they can return any type of value
+ note: - if you want to return more than one value rquried, array or object
+- if you have parameter then you need return statement to give response
+ // named function.,
+// block calcultion done in stack frame
+// function availabel in dynamic memory 
+// program available in heap memory
+
+// functions are called reference datatype 
+
+
+
+ function add(x,y){   //formal parameter it receive data from called funtion.
+
+
+    return x+y;
+ }
+-----
+function fun-name(parameter){  //function head/ prototype of the function
+  loc decl.         //
+
+  staements;         // fun. body
+  return value;
+}
+
+how to call function;
+fun-name();
+fun-name(arg1,arg2...); // with parameter
+
+// from wher to call
+from script tag, from another funtion, event handling
+/////////////////////////////////////////////////////////////////////
+e.g 1.
+-html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=?, initial-scale=1.0">
+
+    <title>Document</title>
+    <script src="function.js"></script>
+</head>
+<body>
+    <!--js practice  -->
+
+   
+  <div align="center">
+    <h4>demo function</h4>
+   
+  </div>
+   
+   
+
+
+   <script>
+ // function calling.
+
+ let res= add(10,20);   //calling fun , actual parameter
+
+ // when we are reutuning a value do one thing always
+//  print or show result.
+
+ document.write(` add function ${res} <br>`);
+
+ document.write(` add function ${add(20,30)} <br>`);
+//
+ document.write(`15 is prime? ${isPrime(15)} <br>`);
+ document.write(`73 is prime? ${isPrime(73)} <br>`);
+
+
+
+ 
+   </script>
+</body>
+</html>
+
+-js file
+ // named function.,
+// block calcultion done in stack frame
+// function availabel in dynamic memory 
+// program available in heap memory
+
+ function add(x,y){   //formal parameter it receive data from called funtion.
+
+
+    return x+y;
+ }
+
+ function isPrime(n){
+   let flag = true;
+
+for(let i=2; i<n/2; i++){
+    if (n%i===0){
+        flag=false;
+        break;
+    }
+}
+
+return flag;
+}
+
+
+
+/////////////////////////////////////////////////////////////////////
+
+
+-2, expressional function                           3. arrow function
+
+ function(params){                                  (params)=>{ body}
+  body
+ }
+
+ - function are belongs to reference datatype / non-primitive
+ - both are anonymous function
+ - using reference we can call.
+ - we can not call directly
+ - anonymous fun. one time uses
+ - use in callbacks.
+ - writing a fun in place of other fun parameters called as callbacks
+ - callbacks is used to extend the functionality.
+ - e.g fun1(function(params){body});
+- In calling function we provide exp.fun. or arrow function i.e callback
+- fun1 responsible to internally calling  exp.fun. or arrow function function here.
+- when fun1 call automatically call exp.fun. or arrow function function
+-------------------------------------------------------------------
+e.g html file
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=?, initial-scale=1.0">
+
+    <title>Document</title>
+    <script src="epression-fun.js"></script>
+</head>
+<body>
+    <!--js practice  -->
+
+   
+  <div align="center">
+    <h4>demo function</h4>
+   
+  </div>
+   
+   
+
+
+   <script>
+ // expressional function 
+
+ // add is refernce variable
+
+document.write(`${add}<br>`) // it will print function body
+document.write(`${add(10,20)}<br>`) // call function
+document.write(`${product(10,20)}<br>`) // call function.
+
+//callback
+const eles=[100,7,20,90,25];
+//forEach() = arry/coll. object
+// new concept of js
+// this method extracting data one by one  from array or collection obj.
+// without writng loop it fetch data.
+
+//eles.forEach(10,20); // acutal parameter
+//calback
+// foreach calling epressional function.
+- it is new method of js.
+- it fetching element one by one.
+// which data is extraceted from array , that extraced data passing as 
+// - parameter to function
+eles.forEach(function(e){   // this  parameter name is anything.
+
+    // which data is extraceted from array , that extraced data passing as 
+// - parameter to function i.e e
+    console.log('hi');
+   document.write(`${e} &nbsp; <br>`);
+});                               //callback epresstional or arrow function use here
+
+// data is extracted by the forEach, print by anonymous function
+
+
+// // wap to sum of array.
+let tot=0;
+//callback
+
+eles.forEach(function(e){
+    tot+=e;
+});
+document.write(`<br> ${tot} <br>`);  // sum print 291
+
+// sort() method use in expresstional function
+
+// wap to print in ascending order?
+
+eles.sort();
+document.write(`<br> ${eles} <br>`); // in this o\p according first digit it sort
+
+// callback existing logic not work exaclty so we use callback to full fill
+//ascending order
+
+// The comparator function function(i, j) decides the order:
+
+// If i - j is negative (i < j), i comes first.
+
+// If i - j is positive (i > j), j comes first.
+
+// If i - j is zero, their order remains unchanged.
+eles.sort(function(i,j){
+    return i-j;  // genarrlly rquird 2 array a[i] compaire with a[j]
+}
+    
+);
+document.write(`<br> ${eles} <br>`); 
+
+// descending order
+eles.sort(function(i,j){
+    return j-i;  // genarrlly rquird 2 array a[i] compaire with a[j]
+}
+    
+);
+document.write(`<br> ${eles} <br>`); 
+   </script>
+</body>
+</html>
+
+
+--js file (exp-function.js)
+
+ // expressional function 
+
+ // add is refernce variable
+
+const add = function(x,y){
+    return x+y;
+}
+//
+const product=function(x,y){
+    return x*y;
+}
+  
+--------------------------------------------------------------------
+
+//forEach() = arry/coll. object
+// new concept of js
+// this method extracting data one by one  from array
+
+//callback
+const eles=[100,7,20,90,25];
+//forEach() = arry/coll. object
+// new concept of js
+// this method extracting data one by one  from array or collection obj.
+// without writng loop it fetch data.
+// forEach method only extract data nothing doing any opration on it ,
+
+// if you want to perform any opration on extracted data then you have to use
+callbacks, which opration you want perform that write insede the paranthesis 
+with the support of experssional or arrow function.
+
+// whenever calling forEach it is responsible for calling expression fun or arrow fun.
+
+// which data is extracted from array that extracted data passsing as parameter to fuction, 
+- for frther calculation i.e (e)
+
+//eles.forEach(10,20); // acutal parameter
+//callback
+// foreach calling epressional function.
+// which data is extraceted from array , that extraced data passing as 
+// - parameter to function
+
+- function 
+eles.forEach(function(e){
+    // which data is extraceted from array , that extraced data passing as 
+// - parameter to function i.e e
+    console.log('hi');
+   document.write(`${e} &nbsp; <br>`);  // 100,7,20,90,25
+});                                   //callback epresstional or arrow function use here
+
+// data is extracted by the forEach, print by anonymous function
+
+
+// map and filter function (session 65 33min)
+/////////
+
+- map can do anything.it is totaly depends on instruction.
+map is always expect the callback, ( anonymoues function )(it work like forEach)
+eg. odd even, double opraration,addition sub, mutli, div etc
+- array inside element add or delete by using map (it work on anonymose function)
+- all logical oration perform inside anonymous function.
+ const a=[2,5,8,10,13,19,20];
+
+ // i want every element double
+ document.write(`a => ${a} <br>`);
+
+let doubled=a.map(function(e){
+    return e*2;
+});
+
+document.write(`a => ${doubled} <br>`);
+
+// here doubled is second array a is orignal array no ditrub to original array.
+
+// In map return array size or number elemet is same,
+// but in fileter 90% case size of resulting arry is differnt 
+
+//filter
+
+// mostly filetr gives new size array
+// here even condtion true, new even array show .
+let even=a.filter(function(e){
+    return e%2===0;
+});
+document.write(`a => ${even} <br>`);
+----------------------------------------------------------------
+e.g map and filter
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=?, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--js practice  -->
+
+   
+  <div align="center">
+    <h4>demo on map and filter</h4>
+   
+  </div>
+   
+   
+
+
+   <script>
+ // map and filter
+
+ const a=[2,5,8,10,13,19,20];
+
+ // i want every element double
+ document.write(`a => ${a} <br>`);
+
+let doubled=a.map(function(e){
+    return e*2;
+});
+ 
+
+document.write(` doubled a => ${doubled} <br>`);
+
+//filter
+// mostly filetr gives new size array
+// here even condtion true, new even array show .
+//wap to print even numer in arry
+let even=a.filter(function(e){
+    return e%2===0;
+});
+document.write(`even => ${even} <br>`);
+//wap to print odd numer in arry
+let odd=a.filter(function(e){
+    return e%2!==0;
+});
+document.write(`odd => ${odd} <br>`);
+   </script>
+</body>
+</html>
+
+----------------------------------------------------------------
+/// arrow function e.g (52 min)
+--- html file.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=?, initial-scale=1.0">
+    <title>Document</title>
+    <script src="arrow-fun.js"></script>
+</head>
+<body>
+    <!--js practice  -->
+
+   
+  <div align="center">
+    <h4>demo on arrow function</h4>
+   
+  </div>
+   
+   
+
+
+   <script>
+    // hpw to access arrow fun by using reference names
+document.write(`${myfun} <br>`);
+
+myfun(); //fun calling
+document.write(`${add(10,20)} <br>`);
+document.write(`${product(15,10)} <br>`);
+document.write(`natusum ${natsum(10)} <br>`);
+document.write(`${area(5)} <br>`);
+
+  //
+  //callback with arrow function.
+
+const eles=[100,7,20,90,25];
+//forEach() = arry/coll. object
+// new concept of js
+// this method extracting data one by one  from array or collection obj.
+// without writng loop it fetch data.
+
+//eles.forEach(10,20); // acutal parameter
+//calback
+// foreach calling epressional function.
+// which data is extraceted from array , that extraced data passing as 
+// - parameter to function
+eles.forEach((e)=>{   // this  parameter name is anything.
+
+    // which data is extraceted from array , that extraced data passing as 
+// - parameter to function i.e e
+    console.log('hi');
+   document.write(`${e} &nbsp;`);
+});                                   //callback expresstional or arrow function use here
+
+
+//
+let tot=0;
+//callback
+
+eles.forEach(e=>{
+    tot+=e;
+});
+document.write(`<br> ${tot} <br>`);
+
+// sort() method use inexpresstional function
+
+eles.sort();
+document.write(`<br> ${eles} <br>`); // in this o\p according first digit it sort
+
+// callback existing logic not work exaclty so we use callback to full fill
+//ascending order
+eles.sort((i,j)=>{
+    return i-j;  // genarrlly rquird 2 array a[i] compaire with a[j]
+}
+    
+);
+document.write(`<br> ${eles} <br>`); 
+
+// descending order
+eles.sort((i,j)=>{
+    return j-i;  // genarrlly rquird 2 array a[i] compaire with a[j]
+}
+    
+);
+document.write(`<br> ${eles} <br>`); 
+   </script>
+</body>
+</html>
+
+---js file.
+
+// arrow funtion without parameter & return value.
+
+ const myfun=()=>{
+    document.write(`hi i am arrow function`);
+ }
+ document.write(`${myfun}`);
+  // arrow funtion with parameter & expression return .
+
+  const add=(x,y)=>{
+    return x+y;
+  }
+// arrow funtion with parameter & implicit return .
+
+const product=(x,y)=>{
+    return x*y;
+  }
+  //or
+  // arrow funtion with parameter & implimentation return .
+// shortcut ways
+// whenever remove curly braces need to remove return keyword 
+//- system return implicitly.
+const product1=(x,y)=> x*y;
+
+//// arrow funtion with single(1) parameter & implicit return .
+
+// in single parameter no needs of pranthesis
+const natsum=(n)=>{
+    return n*(n+1)/2;
+  }
+  //or
+
+  // in single parameter no needs of pranthesis
+const natsum1=n=>{
+    return n*(n+1)/2;
+  }
+
+ //// arrow funtion with single(1) parameter & implicit return .
+
+ const area=(r)=>{
+    return Math.PI*r*r;
+  }
+
+   //or
+   // shortcut method
+     const area1=r=> Math.PI*r*r;
+
+ // math is a predefiend class in js,
+ - inside that we have mathamatical and trignometrical mathods.
+ - sin, cos, tan, etc and log, min, max, ceil, floor, alogorithm related methos availble.
+-------------------------------------------------------------------------------
+////////////
+## session 66.
+
+ // normal function can call by using reference name and callback
+   - anonnyms function can be call by (1) reference or (2) callback,
+
+  - 3rd way is IE/II functions
+   - totle fun place in one parnthesis 
+   ie. (function(){})=> fun defination ();=> fun calling
+
+(4).  //IE/II functions (immediate invoking /expression function )
+
+    //IE/II functions (immediate invoking expression function )
+    // function defination also including fuction calling on same time called IE FUNCTION.
+    // WE dont need to write separate calling.
+   // once fuction exicution done , it will remove space,
+   // memory efficiency
+    (function(){
+        document.write(`hi i am ii expression <br>`);
+    }) (); // function defination and calling on same time
+
+// IE/II functions using arrow function.
+
+(()=>{
+        document.write(`hi i am ii expression <br>`);
+    }) (); // function defination and calling on same time
+
+    // IE/II functions using arrow function with parameter.
+
+((x,y)=>{
+        document.write(`sum is ${x+y} <br>`);
+    }) (10,20); // function defination and calling on same time
+
+-//// rest parameter (function new feature 66 session 20min)
+
+ // one function inside another function is possible i.e nested function.
+
+// in js it not show error but java or python it show error.
+// by using rest parameter we can work with this scinerio
+// sperad oprator is a array combination.
+// rest opratator is a used with function combination.
+// we can used in fun parameter, method..
+// rest parameter we can handle n number of parameter.
+// rest parameter internally take array,
+
+eg.
+const sum=function(...n){
+    let s=0;
+    n.forEach((e)=>{
+        s+=e;
+    });
+    return s;
+}
+
+document.write(`${sum(10,20)} <br>`);
+document.write(`${sum(10)} <br>`);
+document.write(`${sum(10,20,30,20)} <br>`);
+document.write(`${sum()} <br>`);
+
+// how many value is pass it will receive in nvalue.  
+// any type of logical opration we can perform on rest parameter
+// only one rest parameter in function.
+//rest parameter should be last parameter.
+// not allowed at the start or at middle,
+// only allowed at the end.
+
+eg.
+(x,y,...n) => valid, (...n,x,y) => not allowed
+
+/// default parameter. (before rest oprator)
+
+e.g1
+
+//default parameter (genarally default value is undefined)
+
+// if you have 3 parameter four ways reasult get , if we have 5 para then 5 ways...
+// default parameter assign from right to left.
+const add=function(x,y,z){
+    return x,y,z;
+  } 
+   document.write(`${add(10,20)} <br>`);
+    document.write(`${add(10)} <br>`);
+    document.write(`${add(10,20,30)} <br>`);
+    document.write(`${add()} <br>`);
+
+
+// default parameter assign from right to left.
+// if not follow the guidline it does not give any error , but can give  wrong o/p.
+e.g2.
+  const add=function(x=0,y=0,z=0){
+    return x+y+z;
+  }
+    document.write(`${add(10,20)} <br>`);
+    document.write(`${add(10)} <br>`);
+    document.write(`${add(10,20,30)} <br>`);
+    document.write(`${add()} <br>`);
+    
+
+  //shadow  copy
+
+  // if global variable name and  local variable  name have same name then 
+     it called as variable shadowing
+  // in this global variable is not access dirclly.
+
+ // how to overcome this problem?
+   // by using window object we can overcome the shadow effect.
+
+    var n=100;
+    var x=true
+   function myfun(x){   // parameter shadow
+ let n = 200;   // var shadow
+ document.write(`n ${n} <br>`)  ;// 200
+ document.write(`x ${x} <br>`)  ;// false
+ document.write(`global n ${window.n} <br>`)  ;// 100
+ document.write(`global this n ${this.n} <br>`)  ; // or this.n
+
+ document.write(`global x ${window.x} <br>`)  ; //true
+
+   }
+   myfun(false); //calling
+
+  ////////////////////////////////////////////////////////////
+
+//// oops in js (session 66 1hr.01 min object start)
+
+   - two type of oops 
+    - 1. class-based object oriented programming.
+         e.g java, ,net, python,cpp. etc.
+    - 2. prototype- based(object based)object oriented programming. 
+         e.g javascrpt, typescript, perl, php..
+            document, console, window...
+    (we have 3 memory area stack area, heap area, and memory area (class area))
+    - (object, constructor, inheritance, prototype)
+       - (1). object:
+
+       - object represent physical component.
+       - object is real time entity. (means real time exist in the world)
+         . we can touch/see,use.
+         e.g. bird, bag, pencil etc..
+
+      eg. para, heading, img, div etc every html element 
+     (note: every html element or tag is a object only)
+      - object is instance of a class (copy of the class)
+      - instance is dynamic memory block
+      - variable is promoted as property,
+      - function is pramoted as method  
+
+    --- why we create object? if we have class?
+
+     -   one class is used for one purpose, but by object instance we can make the number
+         of cpoies and that number of cpoies can be used  in difeernt purpose thats why we 
+         create object.
+   (e.g orignal marksheet we create copy or zerox of that and used in differtnt place as 
+      per requiredment.)
+    -  object is collection of members.i.e. proprty and method.
+    - properties used for store data, and method is used to perform some opration on data
+    - without using any propety if you create method it is waste. 
+     - e.g.
+      array.length=5, // length is propertry
+      array.sort()    // sort, push are method
+
+       //   array vs object
+
+      - object is use for data maintainence,
+      - array maintain data in sequence order.
+      - object maintain data in random order    
+      [] - array literals
+      { - } object literal
+     - array is index base,object is key and value i.e properties.
+
+  ###    - object create by using two ways.
+  
+      - object literal, new and constroctor function 
+
+      syntax:
+      const refname={
+         property:value,property:value,...
+         "method-name":function(){body},
+         method-name(){body}
+      }
+//  refernece variable maintain the address of prop. and mehtod.
+//// note:
+
+     - named fuction becomes named method
+     - exp function  become   exp mehtod
+     -  arrow fun     become   arrow method
+
+      -how to access object acsess:
+      1. refname.prpperty,
+      2. refname.property=values
+      3. refername.method-name()
+
+       // object declaration
+ // every js object or class  should be derived from object class prototype
+ // after creation of object we can add properties and method that process is 
+ // called as prototying
+const ob={};
+
+document.write(`${ob}<br>`);// [object Object]
+ob.x=10;
+ob.y=20;
+
+//    
+const stud ={
+    sno:11,         
+    name:"ram",
+    cource:'html'
+}
+document.write(`${stud}<br>`);
+// when dirctlty print the obje you get [object Object]
+// if you want to print data call indivdually
+document.write(`sno ${stud.sno}<br>`);
+document.write(`name ${stud.name}<br>`);
+document.write(`cource ${stud.cource}<br>`);
+
+///// object property declaration.
+//
+// html img show in js ways
+const emp ={
+    'id':101,'name':'sam','job':'clerk',"sal":10000
+}
+
+- emp is reference variable,  (it is in stack)
+- {'id':101,'name':'sam','job':'clerk',"sal":10000} -  this is object. (it is in heap area)
+
+// <img src:'a.jpg' width:100 height:150 title:"A" alt:"img not find" />
+
+// how to print data, 2 ways
+// keys(), - it return all keys,
+// values() - it return all values.
+
+// object declaration
+ //  every js object or class  should be derived from object class prototype
+ // after cration of object we can add properties an dmethod that process is 
+ // called as prototying
+
+-------------------------------------------------------------
+e.g1
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=?, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--js practice  -->
+  <div align="center">
+    <h4>demo on object</h4>
+   
+    <!-- <img src={i.src} width={i.width} height={i.height} title={i.title} alt={i.alt} /> -->
+<img id="image" width="100" height="150" title="A" alt="img not found">
+
+  </div>
+   
+   <script>
+ // object declaration
+ //  every js object or class  should be derived from object class prototype
+ // after cration of object we can add properties an dmethod that process is 
+ // called as prototying
+const ob={};
+
+document.write(`${ob}<br>`);// [object Object]
+ob.x=10;
+ob.y=20;
+
+//
+const stud ={
+    sno:11,
+    name:"ram",
+    cource:'html'
+}
+document.write(`${stud}<br>`);
+// when dirctlty print the obje you get [object Object]
+// if you want to print data call indivdually
+document.write(`sno ${stud.sno}<br>`);
+document.write(`name ${stud.name}<br>`);
+document.write(`cource ${stud.cource}<br>`);
+
+// without quot or with quote prop. name is allowed.
+const emp ={
+    'id':101,'name':'sam','job':'clerk',"sal":10000
+}
+document.write(`${emp}<br>`);
+document.write(` ${emp.id} &nbsp; ${emp.name} &nbsp; ${emp.job} &nbsp; ${emp.sal} <br>`);
+
+// obj intialization
+// html img show in js ways
+const i= {
+    src:'/Call.png',width:100,height:150,title:"A",alt:"img not find"
+
+}
+
+document.getElementById("image").src = i.src;
+document.getElementById("image").width = i.width;
+document.getElementById("image").height = i.height;
+document.getElementById("image").title = i.title;
+document.getElementById("image").alt = i.alt;
+// html way of designing
+// <img src:'a.jpg' width:100 height:150 title:"A" alt:"img not find" />
+
+// how to print data (property and values), 2 ways
+let k= Object.keys(i); // here i is object refname you have to pass (retain property)
+let v= Object.values(i); // return value of property
+
+let k= Object.keys(i);
+let v= Object.values(i);
+
+let k= Object.keys(i);     
+let v= Object.values(i);   
+
+document.write(`keys => ${k}<br>`);     // keys => src,width,height,title,alt
+document.write(` values => ${v}<br>`);   //values => /Call.png,100,150,A,img not find
+   </script>
+</body>
+</html>
+--------------------------------------------------------------
+
+
+
+// mehtod declaraiton
+// named method
+
+// e.g2
+
+const ob = {
+    // named method (named funtion)
+    add(x,y){
+        return x+y;
+    },
+    // exprestional  method (expressional  function)
+    product:function(x,y){
+        return x*y;
+    },
+
+    // arrow method (arroe function)
+    mod:(x,y)=>{
+        return x*y;
+    }
+}
+
+document.write(`${ob}<br>`);
+document.write(`add =>${ob.add(10,20)}<br>`);
+document.write(`product is =>${ob.product(10,15)}<br>`);
+document.write(`mod is => ${ob.mod(100,3)}<br>`);
+
+// every function invoked directly is called function e.g product(10,15)
+// fuction develope for genaral pupose.
+// but every method invokde through reference, is called as mehtod e.g ob.product(10,15)
+// method are devlped for property purpose
+// every method should access one property. (otherwise method waset)
+
+///// follwing way we run function not metod
+//add();
+//product();
+//mod();
+
+
+// note:
+    // main difference in method and fuction is that
+    // function should invked directly .ie add(10,20);
+    // method should invoked through reference i.e ob.add(10,20)
+
+
+// object method declaration.
+ //// we have 3 method.
+1. named method 
+2. expression method
+3. arrow mehtod
+
+
+////// object with propeties and mthod 
+e.g
+ const stud ={//properties
+     
+    rno:30,name:'siva', total:350,
+
+    // method , every method should perform opration on properties.
+    // funtion never use properties
+    // reson fuction used outside object  and mehod used inside object
+
+    getResult:function(){
+        // if(total>=400) // it give error following two way to get result.
+        
+        if(stud.total>=400) // it work for object only
+        // if(this.total>=400)  // universal solution . it is predefinde variable name
+        // this is predefiend reference variable, it contain current root adrees 
+            return "pass";
+            else 
+            return "fail";
+         
+    }
+ }
+ document.write(`roll no is =>${stud.rno}<br>`);
+ document.write(`name is =>${stud.name}<br>`);
+ document.write(`total is =>${stud.total}<br>`);
+ document.write(`result is =>${stud.getResult()}<br>`);
+
+ // data modification
+
+ stud.total=450;   // it is personal variable,
+ document.write(`total is =>${stud.total}<br>`);
+ document.write(`resutl is =>${stud.getResult()}<br>`);
+
+// 'this' is predefiend rference variable, it contain current root adrees 
+// when you call any method within the object/constructor/class always use this keyword.
+// outside the object method is call by using user defind refrence variable.
+//
+
+// when you calling your prop. or mehtod within the object you can used predefined referce
+// varibale i.e this.total
+
+// when you working inside the object , function, constructor used ' this.properti-name
+
+/////note: imp
+-  where we use this keyword?
+  you can used this keyword inside the class, object, function.
+  ( outside the object not used )
+
+// outside the object you used refrname.prpo-name.i.e stud.total
+// but inside object used this.property-name. i.e this.total
+
+-- session 68
+
+// object array prop. & method.
+// group of properties is called as object
+ const i1={src:'a.jpg',width:100,height:150};
+ const i2={src:'b.jpg',width:100,height:150};
+ const i3={src:'c.jpg',width:100,height:150};
+
+ 
+ const imgs=[i1,i2,i3];// group of object is called collection obj
+
+ //or
+//array of object
+//when you want work with multiple object use object array
+ const imgs1=[
+ {src:'a.jpg',width:100,height:150},
+ {src:'b.jpg',width:100,height:150},
+ {src:'c.jpg',width:100,height:150}
+ ];
+
+ document.write(`${imgs1} <br>`);
+
+ //using callback 
+ (forEach, for in, for of, for you can use any one of this to extract data from array )
+
+ imgs1.forEach(ob=>{
+    document.write(`${ob.src} &nbsp;
+     ${ob.width} &nbsp; ${ob.height}<br>`);
+ });
+
+ console.table(imgs);
+
+// 2. constructor
+
+ // object constructor function
+ // object construction
+ // constructor name with first letter capital
+ // constructor not call dirclty , invoked with new keyword,
+ // constructor function can not return any value.
+// technically constructor is a function.
+
+// purpose of constructor is to initialization of object.
+
+ /// syntax : constuction creation
+
+ function Constname(param){
+    this.prop=value;
+    this.prop=value;
+    ....methods..
+ }
+ // object creation
+ syn:
+ const refname= new Constname(); // constructor calling.
+ const refname= new Constname(args);
+
+// js file.
+
+  // 
+   // constructor defining
+ function Sample(){
+document.write(`sample constructor invoked <br>`);
+ }
+
+ Sample(); // it will run function only not constructor function,(invalid)
+ const ob=Sample(); // invalid way
+ document.write(`${ob} <br>`); // undefind
+
+ const ob2=new Sample(); // valid way of constuctor function callimg
+ document.write(`${ob2} <br>`); // [object Object] (it run n time)
+
+ // 
+ new Sample()// anonymous object (it run only one time)
+/////
+
+ // object construction
+ // construction name with first letter capital
+ // construction not call dirclty , invoked with new keyword,
+ // construction function can not return any value.
+
+ // constructor defining
+// if you define the counstructor without parameter then it is static initialization 
+// with parameter dyanmic initailization of object.
+
+// static is common data
+// dyanmic is change every time data.
+
+// defining non-parameters constructor.
+function Book(){
+// prop init
+// if not use this then it is local variable, 
+// by using this is called proprty
+
+
+// if before your name   this keyword available the it paroperty,
+    //  otherwise local variable
+
+this.title='c prog';
+this.author='DR';
+this.prize=300;
+this.year=2020;
+//method
+this.getBookInfo=function(){
+    document.write(`${this.title} &nbsp ${this.author} &nbsp  
+    ${this.prize} &nbsp ${this.year} <br> `);
+}
+}
+
+// with parameter constructor
+
+function Book1(title,author,prize,year){
+    // prop init
+    
+    //  prop. = parameter
+    this.title=title;
+    this.author=author;
+    this.prize=prize;
+    this.year=year;
+    //method
+    this.getBookInfo=function(){
+        document.write(`${this.title} &nbsp ${this.author} &nbsp  
+        ${this.prize} &nbsp ${this.year} <br> `);
+    }
+    }
+  
+  //
+    <script>
+ // object construction
+ // construction name with first letter capital
+ // construction not call dirclty , invoked with new keyword,
+ // construction function can not return any value.
+
+ // constructor defining
+// if you define the counstructor without parameter then it is static initialization 
+// with parameter dyanmic initailization of object.
+
+// static is common data
+// dyanmic is change every time data.
+
+/// e.g html file
+
+// defining non-parameters constructor.
+
+        const b1=new Book();// calling of constructor
+        b1.getBookInfo();
+        const b2=new Book();// calling of constructor
+        b2.getBookInfo();
+
+// anonymous obect constructor
+        new Book().getBookInfo();
+
+        // modifying data
+        b1.prize=333;
+        b1.getBookInfo();
+
+        //// 2. with parameter
+
+        const p1=new Book1('html','test1',300,2020);// calling of constructor
+        p1.getBookInfo();
+        const q2=new Book1('css','test2',400,2021);// calling of constructor
+
+        q2.getBookInfo();
+        const q3=new Book1('js','test3',500,2022);// calling of constructor
+        q3.getBookInfo();
+        
+
+
+       </script>
+
+ /// 3. funnctional inheritance
+
+- the process of creating a new constructor, based on another constructor
+- is called functional inheritance.
+- used to build the relationship between multiple constructor.
+- used to extend functionality of existing constructor without modifying source code.
+
+
+syn
+function constructor(params){   //parent/super/main constructor
+  prop initi 
+  method
+}
+function constructor(params){  // child/sub/derived constructor
+Constructor.call() or Constructor.call(this, params)
+  prop initi
+  method
+}
+
+const refvar = new Constructor();
+
+- function inheritance support all type of inheritance
+- 3 type of inheritance
+
+  - single level:
+    one constructuor is derving from another individual constructor
+   (it dont have other conection) constructor called single inheritance
+
+    --------------------------------------------------------
+    e.g. ol>li  
+    1.
+     //single level inheritance
+    e.g. ol>li
+    - if i write css for ol it will also applide for li
+
+ //parent constructor
+ function Parent(){
+  document.write(`parent invoked <br>`);
+ }
+
+ //child constructor
+ function Child(){
+  // call is prdefined fuction
+  Parent.call(); //inhertance  we can add at any line in block
+  document.write(`child invoked <br>`);
+ }
+       </script>
+       <script>
+        const p= new Parent(); // parent 
+        const c= new Child();// parent +child
+
+        new Child();// anonymous
+       </script>
+    --------------------------------------------------------
+
+  - multilevel  :
+     A constructor is derving from the already derived constructor
+       called multilevel constroctor
+   - upper level we can access when we create constructor . bottom to top    
+  e.g div, div,
+// eg.
+//multi level inheritance
+
+ //parent constructor
+ function One(){
+  document.write(`one invoked <br>`);
+ }
+
+ //child constructor
+ function Two(){
+  One.call(); //inhertance  we can add at any line in block
+  document.write(`two invoked <br>`);
+ }
+ 
+ //child constructor
+ function Three(){
+  Two.call(); //inhertance  we can add at any line in block
+  document.write(`three invoked <br>`);
+ }
+       </script>
+       <script>
+        const ob1= new One(); // parent 
+        const ob2= new Two();// parent +child
+        const ob3= new Three();// parent +child
+
+new Three(); // anonymous 
+    
+       </script>
+
+  - hierarchical :
+ e.g html, table, th, td
+  // how to create inheri
+
+  - constructor-name.call()
+
+  - multilevel 
+      it cholde constructor structure
+    - minimum three constructor requird
+    - one object required
+    - multiple child as are deriving from same parent is called 
+       hirarchical inheritance
+  - hierarchical:
+
+  e.g1  <script>
+ //hirarchical inheritance
+//
+ //parent constructor
+ function Parent(){
+  document.write(`Parent invoked <br>`);
+ }
+
+ //child constructor
+ function ChidA(){
+    Parent.call();
+  document.write(`childA invoked <br>`);
+ }
+
+ //child constructor
+ function ChildB(){
+    Parent.call(); //inhertance  we can add at any line in block
+  document.write(`childB invoked <br>`);
+ }
+ 
+     </script>
+       <script>
+        const c1= new ChidA(); // parent 
+        const c2= new ChildB();// parent +child
+       
+
+   new ChidA(); // anonymous 
+    
+       </script> 
+---------------------------------------------------------------
+  - multiple constructor derive form one is called hirarchical
+  -minimum three constructor requird
+  - it is tree structur
+  - multiple object required
+  - how many child availbale that much object requird
+
+  //// note: 3 types of mehtod in oops
+   //  once we initialze a data, we can modify that data, use set mehtod,
+    // those methods are use  retriving data from properties or method called get mehod
+    // which mehtod are use to perform logical oprations on properties or
+    // method called computing method
+=======================================================================================
+e.g . final inhritance.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=?, initial-scale=1.0">
+    <title>Document</title>
+    <script src="constructor-book.js"></script>
+   
+</head>
+<body>
+    <!--js practice  -->
+
+   
+  <div align="center">
+    <h4>demo on multilevel inheritance</h4>
+   
+  </div>
+   
+   
+
+
+   <script>
+    // once we initialze a data, we can modify that data, use set mehtod,
+    // those methods are use  retriving data from properties or method called get mehod
+    // which mehtod are use to perform logical oprations on properties or
+    //  method called computing method
+
+ //hirarchical inheritance
+
+ //parent constructor
+ function One(x){
+    this.x=x; // property init
+
+    this.setX=function(x){       // method (it will help to modify the data)
+        this.x=x;
+    }
+    this.getX=function(){    // (it will help to retrive the data)
+        return this.x;
+    }
+  
+ }
+////
+ //child constructor
+ function Two(x,y){
+    One.call(this,x); // here x receive data for parent, and y receive data from child.
+    this.y=y; // property init
+
+    this.setX=function(y){       // set method
+        this.y=y;
+    }
+    this.getY=function(){       //  get method
+        return this.y;
+    }
+    this.add=function(){      // compute method
+        return this.x+this.y;
+    }
+ this.product=function(){
+    return this.x * this.y;
+ }
+ }
+
+
+ 
+     </script>
+       <script>
+        const ob1= new Two(10,20); // parent 
+        document.write(`add =>${ob1.add()}<br> `);
+        document.write(`product =>${ob1.product()}<br> `);
+
+        
+       
+
+   let p=new Two(15,25).product(); // anonymous 
+      // (it return some value and that value is stroed in ref. varible)
+   document.write(`anonymous product =>${p}<br> `);
+       </script>
+
+</body>
+</html>
+=====================================================================================
+
+
+ //4. prototype. (session 70)
+
+ - prototype is predefined property, which contain list of prop. and method of the object
+ - all js object inherit from prototype object [object Object]   
+
+- date obj. inherit from Date.prototype, 
+- array obj. inherit from Array.prototype
+
+3 types,
+
+- object protype, constructor prtotype, base class prototye.
+
+- for adding the new mwmbers to add into existing  object then use prototype.
+
+syntax:
+//1 Constructor syntax(n number of object afected)
+Constructor.prototype.new-property=value;
+Constructor.prototype.new-method=function(){code};
+
+//2 Object (all object afected)
+Object.prototype.new-property=value;
+Object.prototype.new-method=function(){code};
+
+//refvar syn 3: (only one object affected) reference  prototying
+
+refname.new-prop=value;
+refname.new-method=body
+
+----------
+e.g1
+  <script>
+ // 
+ const emp = {id:10,name:'test1'};
+ document.write(`emp <br>`); //[objec Object]
+
+ // js do internal orations for above eg.
+//  let ob = new Object();
+//  ob.prototype.id=10;
+//  ob.prototype.name=10;
+//  return ob;
+
+const ob1 = {x:10};
+const ob2 = {y:20};
+
+ob1.z=100;  // reference prototyping.
+ob2.z=200;
+
+const b1 = new Book("aaa","A",222,2020);
+const b2 = new Book("bbb","B",322,2021);
+// 
+Book.prototype.nop=500;            // constructor syntax all b0ok aded to b1 and 12
+Book.prototype.getNop=function(){
+    return this.nop
+}
+
+// base class syntax implimentation
+
+Object.prototype.PI=3.14;   // it will addded Pi to all object 
+
+document.write(`x ${ob1.x} <br> z ${ob1.z} <br> PI ${ob1.PI} <br>`)
+   </script>
+========================================================
+/// e.g book.js
+
+   
+ // object construction
+ // construction name with first letter capital
+ // construction not call dirclty , invoked with new keyword,
+ // construction function can not return any value.
+
+ // constructor defining
+// if you define the counstructor without parameter then it is static initialization 
+// with parameter dyanmic initailization of object.
+
+// static is common data
+// dyanmic is change every time data.
+
+// defining non-parameters constructor.
+function Book(){
+// prop init
+// if not use this then it is local variable, 
+// by using this is called proprty
+
+this.title='c prog';
+this.author='DR';
+this.prize=300;
+this.year=2020;
+//method 
+this.getBookInfo=function(){
+    document.write(`${this.title} &nbsp ${this.author} &nbsp  
+    ${this.prize} &nbsp ${this.year} <br> `);
+}
+}
+
+// with parameter constructor
+                // prameter
+function Book1(title,author,prize,year){
+    // prop init
+    // if your name before  this keyword available the it paroperty,
+    //  otherwise local variable
+
+    
+    //   prop. = parameter
+    this.title=title;
+
+        //prop. = parameter
+    this.author=author;
+    this.prize=prize;
+    this.year=year;
+    //method
+    this.getBookInfo=function(){
+        document.write(`${this.title} &nbsp ${this.author} &nbsp  
+        ${this.prize} &nbsp ${this.year} <br> `);
+    } 
+    }
+  
+
+////////////////////////////////
+ (session 70. 40 min)
+ 
+- //DOM.
+(document is a object with the help of that we can able to print on webpage
+ or brwoser)
+
+- Dom allows program and script to dynamiclly access and update 
+   the structure and style of document.
+
+- In existing webpage if you want to make some changes by using dom we can do it.
+- dynamic: 
+- dom is an API , api is colloection of lib. lib is collection of predefined programs.
+ e.g
+  html <=> DOM <=> JS. (dom is intermediater between html and js)
+-  html work with tag, and dom work with object (class)
+
+## these 4 opration can handle by using dom
+  1.data manipulation, 2.structure change, 3.style change, 4.event handling
+e.g:
+
+no. of html tags = no. of DOMs + extra tag.
+ 
+tag name                  dom class   (is nothing but object  )           
+
+head                  HTMLHeadElement        => obj
+
+p                     HTMLParagraphElement   => object
+h1 to h6              HTMLHeadingElement     => object
+
+//// session 71
+
+- every html tag is object in js.
+
+  //two level dom manipulation
+   1. working with document object, 
+   2. working with element object
+     
+ // 1. document => web-development/page (web page manipulation)
+ // 2. element =>  html element (css, data manipulation)
+ 
+ -  without document object we can not work with element object.
+ - because all html element is a part of document.
+
+------------------------------
+e.g1
+// dom properties
+// document is alredy object of html no need to write like (document.html)
+- if you want perform on web page not on data .
+1. document.title 
+
+ document.write(`${document.title}<br>`);
+ // modifing title of page
+
+ document.title="mohan edit title";
+
+2.  document.URL
+ // how to know url of web page
+
+  //if any variable in capital then it will be constant not eidtable
+
+ document.write(`${document.URL}<br>`);
+
+// document not support but widow object support
+ // modifying that url
+//  window.location="htttps://www.google.com";
+
+//3. document.head 
+ this property return the referce of head tag.
+
+const h=document.head;   // it have head tag related object
+
+ // it have head tag related object, also head tag info, 
+// show in console i.e type h then it will show
+
+document.write(`${h}<br>`);   // [object HTMLHeadElement]
+document.write(`${h} => ${h.tagName}<br>`); // it show tag name i.e head
+
+//4. document.body
+
+const b=document.body;
+document.write(`${b}<br>`); //[object HTMLBodyElement]
+document.write(`${b} => ${b.tagName}<br>`); // BODY
+
+//5.
+//document is object of html
+// document is nothing but HTML
+
+// 6.document.images
+
+- collection object
+// In collection object tag name is undefind.
+
+const ob1=document.images;
+document.write(`${ob1}<br>`);   //[object HTMLCollection]
+document.write(`${ob1} => ${ob1.tagName}<br>`);  // [object HTMLCollection] => undefined
+
+document.write(`${ob1[1]} => ${ob1.tagName}<br>`); // [object HTMLImageElement] => undefined
+
+// it is collection object,  .i.e array
+// when you plural caling it background we have collection object
+// when we have single pronunsation then have normal object.
+
+for(let i of ob1){
+  document.write(`${i} => ${i.tagName}<br>`)
+}
+
+//7. document.links
+
+const ob2=document.links;
+document.write(`${ob2}<br>`); //[object HTMLCollection]
+document.write(`${ob2} => ${ob2.tagName}<br>`);  //[object HTMLCollection] => undefined
+document.write(`${ob2[1]} => ${ob2.tagName}<br>`); //
+
+// it is collection object, 
+// when you plural caling it background we have collection objet
+// when we have single pronunsation then have normal object.
+for(let i of ob2){
+  document.write(`${i} => ${i.tagName}<br>`)
+}
+
+// 8. document.forms
+const ob3=document.forms;
+document.write(`${ob3}<br>`);   // [object HTMLCollection]
+
+///// note:
+// head, body,title, images,links, forms only this can write this way
+// remaing tag get by using geter method i.e object method
+
+// Dom mehtod (getter method)
+
+# note.
+// In collection we have nodelist and it have list and set 
+- list maintain data in sequence 
+- set maintain data by reference.
+
+
+const ob=document.h3;
+document.write(`${ob}<br>`); // (undefind) it will  not allowed, it get by using geter methos only.
+//1 document.getElementById(`heading1`)
+
+const ob1=document.getElementById(`heading1`)
+document.write(`${ob1}<br>`);
+
+// 2 method   (document.getElementsByName(`color`))
+
+// colection is two type object, sets and list
+// here elments use not element
+const ob2=document.getElementsByName(`color`);
+document.write(`${ob2}<br>`);   // [object NodeList]
+
+//3 method   = document.getElementsByTagName(`label`
+
+const ob3=document.getElementsByTagName(`label`);
+document.write(`${ob3}<br>`);   // 
+
+//4 mehtod selctor mehtod  = document.querySelector(`#i`)
+// when you are writing selector you need symbol coumplsary .ie id = #, class= . etc
+// if you getting class name which have same class name for multiple tag then
+- it give first class only not all.
+
+- to overcom we have bellow method.
+
+const ob1=document.querySelector(`#i`);
+document.write(`${ob1}<br>`);  
+
+// 5 method  = document.querySelectorAll(`.c`)
+// how many tags contain this class that will return in ob2
+
+
+const ob2=document.querySelectorAll(`.c`);
+document.write(`${ob2}<br>`);  
+====================================================================
+// this 3 are properites
+ 1. document.title 
+ 2. document.URL 
+ 3. document.head  
+ 4. document.body
+ 5. document.images,
+ 6. document.links, 
+ 7. document.forms
+
+// this 5 are method
+1. getElementById,
+2. getElementsByName,
+3. getElementsByTagNam,
+4. querySelector, 
+5. querySelectorAll
+=======================================================================
+e.g2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=?, initial-scale=1.0">
+    <title>Document object mehtod</title>
+</head>
+<body>
+    <!--js practice  -->
+
+   
+  <div align="center">
+    <h4>demo  document  object properties</h4>
+   
+    <!--  //document => web-development/page (web page manipulation) -->
+<h1 id="heading1">hello wold</h1>
+
+<input type="radio" name="color"><label for="r">red</label><br>
+<input type="radio" name="color"><label for="r">green</label><br>
+<input type="radio" name="color"><label for="r">blur</label><br>
+<hr>
+
+  
+  </div>
+   
+   
+
+
+   <script>
+    //two level dom manipulation
+     
+ //document => web-development/page (web page manipulation)
+ // element => html element (css, data manipulation)
+
+const ob=document.h3;
+document.write(`${ob}<br>`); // it will  not allowed, it get by using geter methods only.
+//1
+
+const ob1=document.getElementById(`heading1`)
+document.write(`id ${ob1}<br>`);    // id [object HTMLHeadingElement]
+
+// 2 method
+// colection is two type object, sets and list
+
+// here elments use not element
+
+const ob2=document.getElementsByName(`color`);
+document.write(` name ${ob2}<br>`);   // [object NodeList]
+// collection basically two type one list, and second is sets
+
+//3 mthd
+
+// what ever tag name provide in paranthesis, it will give all lable or p tag
+   in html program.
+
+const ob3=document.getElementsByTagName(`label`);
+document.write(` tagname${ob3}<br>`);   // 
+
+//4 mehtod
+
+   </script>
+</body>
+</html>
+
+
+===========================
+e.g 3
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=?, initial-scale=1.0">
+    <title>Document object mehtod</title>
+    <style>
+        #i{
+            color: red;;
+        }
+        .c{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!--js practice  -->
+
+   
+  <div align="center">
+    <h4>demo  document  object properties</h4>
+   
+    <!--  //document => web-development/page (web page manipulation) -->
+<h2 id="i">welcome</h2>
+<span class="c">html</span>
+<span class="c">css</span>
+<div class="c">js</div>
+
+  
+  </div>
+   
+   
+
+
+   <script>
+    //two level dom manipulation
+     
+ //document => web-development/page (web page manipulation)
+ // element => html element (css, data manipulation)
+
+
+
+//4 mehtod query 
+
+// when you are writing selector you need symbol coumplsary .ie id = #, class= .
+  , pshdo :,  attribute <> etc etc
+
+const ob1=document.querySelector(`#i`);
+document.write(`${ob1}<br>`);  
+
+// 5 method 
+
+// how many tags contain in this class that will return in ob2
+const ob2=document.querySelectorAll(`.c`);
+document.write(`${ob2}<br>`);  
+   </script>
+</body>
+</html>
+======================================================================
+=======================================================================
+
+
+// 2nd level.
+
+/// dom element (this will help to do opration on geter object)
+
+// if you want do any type opration on html tag you need element object,
+- without element object not possible.
+
+// element object properites (3)
+
+- data releted manipulation   (1st level data manipulation)
+e.g eleobj.innerText, eleobj.innerHTML,eleobj.value,
+///
+//if you want  perform opration on paired tag use this two method
+// eleobj.innerText,
+//  eleobj.innerHTML,
+
+// if you want  perform opration on input tag/element use this method
+// eleobj.value,
+
+
+/// 1.innerText,
+
+
+// h is an object of h1 tag, it have all info of h1 tag.
+const h=document.getElementById(`heading1`); 
+document.write(`${h.innerText} <br>`)
+
+// data deletion 
+// h.innerText=""
+// modify data
+// h.innerText="mohan";
+// data appending
+h.innerText+="mohan";
+
+//
+const t=document.getElementById('tb');
+document.write(`${t.value}<br>`)
+// data deletion 
+//  t.value=""
+// modify data
+t.value+="apple"; // data append
+
+//2. innerHTML
+
+- innerText support only text, it not support html, css code.
+- then innerHTML
+//
+// - data releted manipulation (data manipulation property) 
+//e.g eleobj.innerText, eleobj.innerHTML,eleobj.value,
+
+document.querySelector("#div1").innerText=`200  <mark>&#8377;</mark> per kg`;
+// anonymous object. innehtml
+document.querySelector("#div2").innerHTML=`200 <mark>&#8377;</mark> per kg`;
+----------------------------------------------------------------------
+/// attribute/settings manipulation  (2nd level data manipulation)
+
+
+// by using prpperty                 by using dom mthod
+ // 1. eleobj.attribute,       or   eleobj.getAttribute('attr'),
+
+ // 2. eleobj.attribute=value, or    eleobj.setAttribute('attr',value),
+ 
+ // by using dom mthod 2nd way
+  //1. eleobj.getAttribute('attr'),  
+  //2. eleobj.setAttribute('attr',value),
+  //3. eleobj.removeAttribute('attr'),
+
+    const i=document.querySelector("img");
+// 1.get data
+document.write(`${i.src}<br> ${i.width}<br> ${i.height}<br>`)
+// i.getAttribute("src","/img/call.png") // second way
+// modifying img
+// i.src="/img/call.png"
+
+// 2. set data or modify dat
+// i.setAttribute("src","/img/call.png") // second way
+i.width="100";
+document.write(`${i.src}<br> ${i.width}<br> ${i.height}<br>`)
+
+//3. remove attribute
+i.removeAttribute("height")
+document.write(`${i.src}<br> ${i.width}<br> ${i.height}<br>`)
+
+//4.  add attribute
+
+(adding the new things  into existing object is called as prototyping)
+
+i.title="bird";
+// attribute change it will work with click event
+document.querySelector("#pw").type="text";
+
+/////////
+
+// 3 style mnaipualtion
+
+//eleobj.style.prop  // adding properties
+//eleobj.style.prop=value // modifying propertie
+//eleobj.style.prop=0/none/no  // removing css
+(note: for css deletion no property  for css, use none value by using css)
+////////
+
+ const h1= document.querySelector("#head1");
+document.write(`${h1.style.background}<br> ${h1.style.color}<br>`);
+h1.style.background="black";
+h1.style.color="#fff";
+h1.style.width="30%";
+
+h1.style.textAlign="center";
+h1.style.boxShadow="0px 0px 10px red";
+
+///4. dom event
+- how to attach event?
+
+ - 1. eleobj.event=code,  // in this on is allowed i.e onclick
+    -  eleobj.event=(callback, named funtion or experssional fun arrow fun)
+
+    2. eleobj.addEventListner("event", code);// in this on is not allowed i.e click
+    -->
+
+ // 1st apporach
+
+ const b1=document.querySelector("#bt1");
+
+ b1.onclick=function(){alert("button pusshed");}
+
+
+ // 2nd apporach.
+ // here dont use onclick etc use click .
+
+ const b2= document.querySelector("#bt2");
+ b2.addEventListener("click",function(){
+    alert("button pulled")
+ });
+
+(adding the new things  into existing object is called as prototyping)
+===================================
+
+ //5. structural modification (element delet or add element)
+ - how to add or delete tag on existing page .
+
+1  // eleobj.remove()
+
+// 2 and 3 method is used to create tag
+2 // createElement("tag")  (it is indepndent tag)
+3 // appendChild()  (it will create under parent , placing on webpage)
+
+ synt:
+  // eleobj.remove()
+// how to remove the element 
+  <button id="bt1" onclick="document.querySelector('h4').remove()">delete element</button>
+----------------------------------------
+e.g1<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=?, initial-scale=1.0">
+    <title>Document object mehtod</title>
+    <style>
+        #i{
+            color: red;;
+        }
+        .c{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!--js practice  -->
+
+   
+  <div align="center">
+    <h4>demo  on deleting element</h4>
+   
+    <!--  //document => web-development/page (web page manipulation) -->
+    <!-- 
+    - 1. eleobj.event=code,  // in this no is allowed i.e onclick
+    -  eleobj.event=(callback, funtion , experssional fun)
+    2. eleobj.addEventListner("event", code);// in this no is not allowed i.e click
+    -->
+<div id="d1">
+<h1>red apple</h1>
+<p>yellow mangow</p>
+
+<button id="bt1" onclick="document.querySelector('h4').remove()">delete element</button>
+</div>
+
+  
+  </div>
+   
+   <hr>
+
+
+   <script>
+    //two level dom manipulation
+     
+ //document => web-development/page (web page manipulation)
+ // element => html element (css, data manipulation)
+
+ // eleobj.remove()
+
+   </script>
+</body>
+</html>
+/////// 73 session.
+
+  // how to add the element
+
+   <!-- 
+    // dom mehtod  to creat and add new element
+    -  createElement("tag")
+    -  appendChild()
+    //  // if you want to diplay ceratement tag on webpage for that use appendChild mehtod
+    -->
+
+/// note
+// adding class in tag.
+
+eleobj.classList.add('classname');
+  i1.classList.add('a','b');
+
+// dynaic add
+i1.id = 'heading1';           // Adds ID 'heading1'
+
+ //  then you can be add to css directly to this class.
+    //
+    You can also remove multiple classes just as easily:
+
+javascript
+i1.classList.remove('a', 'b');
+Or check if a class exists:
+
+// javascript find class availabel or not
+if (i1.classList.contains('a')) {
+  // Do something
+}
+ document.querySelector("#bt").onclick=function(){
+    const i = document.createElement("img"); // it create frsh object
+    
+    i.src="/img/call.png";
+    i.style.width="80px";
+    i.style.height="80px";
+
+    // appendChild(i)
+    //document.body.appendChild(i);  // it will add at the end of the body tag
+    
+    // add in div 
+  //  // if you want to diplay ceratement tag on webpage for that use appendChild mehtod
+    document.querySelector("#d").appendChild(i);
+ }
+
+ // dom implementation eg. 1.chatbox, 2.bill creation,(another dom eg. available in notes)
+  in  73 session
+ ----------------------------------------------------------------------------------
+ e.g1 (chatbox)
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=?, initial-scale=1.0">
+    <title>Document object mehtod</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!--js practice  -->
+<h1 align="center">dom impimentations</h1>
+   
+  <div style="width: 60%; height: 300px;margin: auto; text-align: center;">
+<textarea name="ta" id="ta" style="width: 100%; height: 80%;"></textarea>
+<br>
+<button id="b">B</button>
+<button id="i">I</button>
+<button id="u">U</button>
+<button id="s">S</button>
+<button id="l">L</button>
+<button id="c">C</button>
+<button id="r">R</button>
+
+<input type="color" id="clr">
+
+   </div>
+
+
+   <script>
+   
+//    const tb=document.querySelector("#ta");
+   const tb=document.querySelector("#ta").style;//(2)
+
+    //bold button
+//     document.querySelector("#b").onclick=function(){
+
+//     if(tb.style.fontWeight==="bold"){
+//    tb.style.fontWeight="normal";
+//     }
+//    else{
+//     tb.style.fontWeight="bold";
+//    }
+//    } 
+   //bold button (short hand code 2)
+   document.querySelector("#b").onclick=function(){
+    // crating toggle btn  designing
+
+    if(tb.fontWeight==="bold"){
+    // tb.style.fontWeight="bold";
+   tb.fontWeight="normal";
+    }
+   else{
+    tb.fontWeight="bold";
+   }
+   }
+
+   //italic button (shor hand code 2)
+   document.querySelector("#i").onclick=function(){
+    // crating toggle btn  designing
+
+    if(tb.fontStyle==="italic"){
+    // tb.style.fontWeight="bold";
+   tb.fontStyle="normal";
+    }
+   else{
+    tb.fontStyle="italic";
+   }
+   }
+
+   //undeline button (shor hand code 2)
+   document.querySelector("#u").onclick=function(){
+    // crating toggle btn  designing
+
+    if(tb.textDecoration==="underline"){
+    // tb.style.fontWeight="bold";
+   tb.textDecoration="none";
+    }
+   else{
+    tb.textDecoration="underline";
+   }
+   }
+
+    //strike button (shor hand code 2)
+    document.querySelector("#s").onclick=function(){
+    // crating toggle btn  designing
+
+    if(tb.textDecoration==="line-through"){
+    // tb.style.fontWeight="bold";
+   tb.textDecoration="none";
+    }
+   else{
+    tb.textDecoration="line-through";
+   }
+   }
+
+    //left button 
+    document.querySelector("#l").onclick=()=>tb.textAlign="left";
+   
+    //center button 
+    document.querySelector("#c").onclick=()=>tb.textAlign="center";
+   
+    //right button 
+    document.querySelector("#r").onclick=()=>tb.textAlign="right";
+   
+//color button 
+// document.querySelector("#clr").onclick=()=>tb.textAling="left";
+document.querySelector("#clr").onchange=()=>tb.color=clr.value;
+
+// onclick is work but we can change color then applide the style due to this reason we use 
+// onchange
+   
+   </script>
+</body>
+</html>
+
+
+e.g2 (bill creation)
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=?, initial-scale=1.0">
+    <title>Document object mehtod</title>
+    <style>
+        .c{
+            display: inline-block;
+            border: 1px solid #6c6c6c;
+        }
+        .c button,.c input{
+            border: none;
+            outline: none;
+           width: 40px;
+           height: 40px;
+           font-size: 2em;
+           text-align: center;
+           background: none;
+           cursor: pointer;
+
+        }
+
+    </style>
+</head>
+<body>
+    <!--js practice  -->
+<h1 align="center">dom impimentations</h1>
+   
+  <div>
+    <img src="img/Mail.png" alt="" width="150" height="100">
+    <h3> basking robin - ice cream</h3>
+    <h4>washim</h4>
+    <h4>merry berry strberry signature  &nbsp; &#8377;245</h4>
+
+    <div class="c">
+   <button id="decre"> - </button>
+   <input type="text" id="qty" value="0" readonly>
+   <button id="incre"> + </button>
+    </div>
+    <br><br><br>
+    <strong>bill details</strong>
+
+   <span>item tottal</span> <output id="itemtot">&nbsp; &#8377;0</output><br><br>
+
+   <span>gst and charges</span> <output id="gst">&nbsp; &#8377;0</output><br><br>
+
+   <strong>To pay</strong> <output id="totamt">&nbsp; &#8377;0</output><br><br>
+   </div>
+
+
+   <script>
+   
+   let it,gs,ta, up=245;   // variable declaration (up = unit prize, it= item totatal
+   // gs== gst , ta= total amount)
+
+   // incement button
+
+   document.querySelector("#incre").onclick=function(){
+    qty.value++;
+
+    it=qty.value*up;
+    gs=it*8/100; // 8% gst calculate
+    ta=it+gs;
+
+
+    // display calculated value.
+    document.querySelector("#itemtot").innerHTML=`&#8377; ${it} `;
+    document.querySelector("#gst").innerHTML=`&#8377; ${gs} `;
+    document.querySelector("#totamt").innerHTML=`&#8377; ${ta} `;
+
+
+   }
+
+    // decrment button
+
+    document.querySelector("#decre").onclick=function(){
+        
+
+     if(qty.value>0)  // for minus valu stop or 
+
+    qty.value--;
+    it=qty.value*up;
+    gs=it*8/100; // 8% gst calculate
+    ta=it+gs;
+
+    document.querySelector("#itemtot").innerHTML=`&#8377; ${it} `;
+    document.querySelector("#gst").innerHTML=`&#8377; ${gs} `;
+    document.querySelector("#totamt").innerHTML=`&#8377; ${ta} `;
+
+
+   }
+///////////////////////////////////// second way
+// by using fuction smae code work
+    // incement button
+
+    // document.querySelector("#incre").onclick=function(){
+    // qty.value++;
+    
+    // compute();
+    // }
+
+
+
+    // decrment button
+
+    // document.querySelector("#decre").onclick=function(){
+        
+
+    //  if(qty.value>0)  
+    //  qty.value--;
+    //  compute();  // function calling.
+    // }
+ 
+    // function  compute(){
+    // it=qty.value*up;
+    // gs=it*8/100; 
+    // ta=it+gs;
+
+    // document.querySelector("#itemtot").innerHTML=`&#8377; ${it} `;
+    // document.querySelector("#gst").innerHTML=`&#8377; ${gs} `;
+    // document.querySelector("#totamt").innerHTML=`&#8377; ${ta} `;
+
+    // }
+   </script>
+</body>
+</html>
+ ----------------------------------------------------------------------------------
+
+ // BOM (timer functions) (session 73 1:29:30 min)
+
+ // total 4 type of timer fuction  availbel
+  total 10 global function of js , 
+
+ // alert(), prompt(), confirm(). parseInt(), parseFloat() etc
+
+ // js is single therede 
+ // but if you want multi thred functionality  then use timeer function 
+
+ /// setInterval(), setTimeout() this two function are called as lazy function,
+  - this function load after some specifide time so called as lazy fuction.
+
+ // both are calback funtion,
+ // both are timer function , both run when timer is given,.
+ // setInterval(),  // it work repetady, it is callback func,
+ // setTimeout(),  // it work once 
+
+
+ --- timer function  (called as lazy function)
+ //1. setInterval(),  // it work repetady, it is callback func,
+   
+      var= window.setInterval(task,"interval");
+
+ // 2. clearInterval(), 
+       
+       window.clearInterval(t-tindex)
+
+// 3. setTimeout(),  // it work once , it is callback func,
+       var= window.setTimeout(task,"interval");
+
+ // 4 cleartimeout(),
+   
+   window.clearTimeout(t-tindex)  // t-index=  var name .ie task
+   // which timer you want to exit that timer index put here.
+
+ // 5   print();
+
+   <button onclick"window.print()"> print page</button>
+   // use this print on button it will work for you for print page.
+
+   // what is pupose of lazy fun
+   - it run base on timeer
+   - it is callback function.
+
+   =================================================
+   eg. 1 timer function
+
+   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=?, initial-scale=1.0">
+    <title>Document object mehtod</title>
+    <style>
+
+
+    </style>
+</head>
+<body>
+    <!--js practice  -->
+<h3> demo on settimeout, setinterval </h3>
+
+   <script>
+
+// var= window.setInterval(task,"interval");
+
+// it will exicute only once
+
+//    window.setTimeout(function(){alert("hi, i am time out")},5000); 
+
+   // it will exicute n times
+
+//    window.setInterval(function(){alert("hi, i am time out")},3000);
+
+ // window.clearInterval(1);   //timer deacitvation
+ // here time index is 1 because is available only one in this e.g 'var' is timer index.
+  // window.clearTimeout(1); //timer deacitvation
+  
+   </script>
+</body>
+</html>
+
+-------------------------
+e.g 2
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=?, initial-scale=1.0">
+    <title>Document object mehtod</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <!--js practice  -->
+<!-- <h3> demo on timer function </h3> -->
+ <h1 id="d">Date</h1>
+ <h2 id="t">Time</h2>
+
+ 
+   <script>
+   //window.setTimeout(function(){alert("hi, iam time out")},5000);
+   //window.setInterval(function(){alert("hi, iam time out")},3000);
+
+   // displying date
+
+   //new Date().getday()/ .getDate()/ .getMonth/getYear(); /.toLocaleDateString();
+
+  // document.querySelector("#d").innerText= new Date()//it will display date and time
+
+   document.querySelector("#d").innerText= new Date().toLocaleDateString();
+// it will give only date
+
+   // time displyaing
+   // new Date().getHours()/toLocaleTimeString();
+
+   setInterval(function (){
+    document.querySelector("#t").innerText= new Date().toLocaleTimeString();
+   },"1000");
+   
+
+   </script>
+   <br>
+   <div id="d1" style="width: 100%; height: 200px; background: #000;"></div>
+   <p align=""center>
+  <button id="start"> start color</button> &nbsp;
+  <button id="stop"> stop color</button>
+
+   </p>
+
+   <script>
+    let ti;
+
+    // start color change
+    document.querySelector("#start").onclick=()=>{
+
+        // nested arrow function or nested callback
+        ti=setInterval(()=>{
+            let c= ` #${Math.random()*1000000|0}`;
+            // for removing decimal fraction part we use mthod or oprator i.e toFixed, |
+
+            document.querySelector("#d1").style.background=c;
+        },"2000");
+    //     document.querySelector("body").style.background=c;
+    // },"2000");
+    }
+
+    // stop color
+ document.querySelector("#stop").onclick=()=>clearInterval(ti);
+
+   </script>
+</body>
+</html>
+--------------------------------------------
+e.g3 (img change using timer funtion)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=?, initial-scale=1.0">
+    <title>Document object mehtod</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <!--js practice  -->
+<!-- <h3> demo on timer function </h3> -->
+
+<h1 align="center">img slid</h1>
+<div style="width: 70%; height: 300px; margin: auto;">
+<img src="/img/Call.png" alt="" style="width: 100%;height: 100%;">
+</div>
+ 
+   <script>
+   //window.setTimeout(function(){alert("hi, iam time out")},5000);
+   //window.setInterval(function(){alert("hi, iam time out")},3000);
+
+   // img change 
+const imgs=['Call.png','card.png','Mail.png'];
+
+let index=0;
+setInterval(function(){
+document.images[0].src=`/img/${imgs[index]}`;
+
+index++;
+
+if(index==imgs.length)
+index=0;
+},"3000");
+  
+
+/// document.queryselector('body').style.background
+
+
+  
+   </script>
+  
+</body>
+</html>
+  //////////////////////////////////////////// 
+
+session 74 ( after 45min start)
+   // error handling
+   // it will control flow statement
+// how to react when error occure, and how to handle that error is called as error handling
+
+- to work with error/exceptions us try, catch,finaly,throw keywords.
+
+- 1.try, 2. catch and  3.finaly are blocks,
+- 4. throw is  statement.
+
+- syntax:
+--(note: try block through six error that error cache y cach block (refvar))
+try{
+  code to run[break;]  // try block try exicute your program,
+}
+catch(refvar){                 // if problem occure catch block code exicuted
+// error comes from try blecok i.e revar
+// refvar is an errror object which is occur in try block.
+
+  code to run if exception occure[break;]
+}
+finaly{   // optional, 
+  statements
+}
+
+// 5 error in js 1 is outdated error i.e 6 error
+In JavaScript, there are several types of errors that can occur during code execution.
+ Here are the main types:
+
+1. Syntax Errors – Also known as parsing errors, these occur when the JavaScript
+ code is written incorrectly, preventing proper execution.
+  Example: console.log("Hello) (missing closing quotation mark).
+
+2. Reference Errors – Happen when a variable is used before it is defined,
+ or if there is a misspelled variable name. Example: console.log(myVar); 
+ when myVar has not been declared.
+
+3. Type Errors – Occur when an operation is performed on a data type that is not 
+compatible. Example: Trying to call a method on undefined: null.toUpperCase();.
+
+4. Range Errors – Arise when a value is set beyond its allowed range,
+ like setting an invalid array length. Example: let arr = [];
+  arr.length = -5; (array length cannot be negative).
+
+5. Eval Errors (Rare) – Related to the incorrect use of the eval() function, 
+though modern JavaScript discourages its use for security and performance reasons.
+
+6. URI Errors – Occur when global URI-handling functions (decodeURI(), encodeURI())
+ are used incorrectly. Example: decodeURIComponent('%') (an incomplete encoded URI).
+
+e.g 
+
+ try{
+    document.write1(`msg from try block <br>`);
+  }
+  catch(e){
+    document.write(`msg from catch block <br>`);
+
+    // console.log(e.name); // name and message both ara properites of error function
+    console.error(e.message); 
+    // always use console.error()
+    //  while error showing instead console.log
+  }
+  finally{
+    document.write(`msg from finaly block `);
+  }
+  ----------------------------
+ e.g.2
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=?, initial-scale=1.0">
+    <title>Document object mehtod</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <!--js practice  -->
+<!-- <h3> demo on error handling </h3> -->
+
+<h3>error handling</h3>
+<label for="">First number</label><br>
+<input type="text" id="fn"> <br>
+
+<label for=""> second number</label><br>
+<input type="text" id="sn"> <br><br>
+<button id="bt">Addition</button>
+<output id="op"></output>
+
+ 
+   <script>
+ document.querySelector("#bt").onclick=function(){
+    try{
+    let x,y,res;
+
+    x=eval(fn.value);  // eval.e eval function used to parse the value,otherwise send error.
+    y= eval(sn.value);
+    res=x+y;
+
+    document.querySelector("#op").value=`sum is ${res}`;
+    }
+    // 'err' is referece variable store the value of fn.value.
+    catch(err){
+        // document.querySelector("#op").value=`Please enter numbers only`; 
+        document.querySelector("#op").innerHTML=`<span style="color:red">Please enter numbers only</span>`; 
+        // predefined error msg with catch block , and it show on browser
+
+        console.error(err);  // this error in console
+    }
+ }
+  
+   </script>
+  
+</body>
+</html>
+
+-----------------------
+e.g3
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=?, initial-scale=1.0">
+    <title>Document object mehtod</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <!--js practice  -->
+<!-- <h3> demo on error handling </h3> -->
+
+<h3>error handling</h3>
+<label for="">First number</label><br>
+<input type="text" id="fn"> <br>
+
+<label for=""> second number</label><br>
+<input type="text" id="sn"> <br><br>
+<button id="bt">division</button>
+<output id="op"></output>
+
+ 
+   <script>
+
+    // throw err-obj;
+    // throw err-msg;
+
+    // we can throw only one error at a time.
+    // every throw before one decision makeing required.
+    // always write thorw error inside try block
+
+ document.querySelector("#bt").onclick=function(){
+    try{
+    let x,y,res;
+
+    x=+(fn.value);  // + parsing 
+    y=+(sn.value);
+
+    // isnan is predefined function to check data  is nan  or not
+    if(isNaN(x)|| isNaN(y))
+    throw ` plz enter numbers only`;
+    // throw new Error(`plz enter numbers only`); // second way.
+
+    if(y===0)
+    throw ` divizer should be other than 0`;
+
+    res=x/y;
+   
+    document.querySelector("#op").value=`div is ${res}`;
+    }
+    // err is referec variable store the value of fn.value.
+    catch(err){
+        // document.querySelector("#op").value=`Please enter numbers only`; 
+        document.querySelector("#op").innerHTML=`<span style="color:red">${err}</span>`; 
+        // predefined error msg with catch block
+
+        console.error(err);
+    }
+ }
+  
+   </script>
+  
+</body>
+</html>
+--------------------------------------------------------------------------
+   // steps for create error in try block
+
+let x,y,res;
+   // 1. identify error, 2. then it creatobj. of referce variable (e),
+    // 3. obj initialize  with err details,
+    // 4. at last throw error,
+    //(implicitly try blck have throw if error accour it will genarate otherwise not)
+   
+   // throw err-obj;
+    // throw err-msg;
+
+    // we can throw only one error at a time.
+    // every throw before one decision makeing required.
+    // always write thorw error inside try block
+---------------------------------------------------------------------------
+
+  ///  session 75 (38 min) validations
+
+  - verifying the data or crosschecking the data with original data is called as validations
+  - it is used to improve the quality of data.
+
+  // 1.form validtions,client side validations,js validation.
+
+  // we are verifying form in the client machin with the support of js.
+
+  // 2. server side validations need - java/.net etc
+
+  // we are verifying html on client machin called as client side validations.
+
+  - 1.(by using own logic)  we can create own logic to verifying data e.g if, loops etc
+  - 2.  by using regular expressions.
+
+  - regular expression is a pattern or criteria which helps to compaire with strings.
+
+     by using regexp constructor, or by using regex literals 
+
+syntax:
+// regular expression.
+
+1. const refvar = new RefExp (pattern);
+2. const refvar =/ pattern/;
+
+/^ ----------- $/  (between this write pattern)
+
+- refvar.test(data) => true or false
+
+word     => /ram/  (ram conatains in data or not(meaning))
+/i       => /ram/i   (ignore case) i.e uppercase lower case
+/g       => /ram/g   (global)  i.e when u r searching any word like suoppse 'is' searching
+                   which is availabel separatly or inside any word like is or this
+/w       => /ram/w   (word)  // i.e this match exactly same word.
+
+[p1p2p3] => multiple paterns match.(write within [ ]) if any one match result is true.
+            it use OR oprator.
+
+-        => range i.e a-d = abcd
+\d       => digits i.e 0 to 9
+\s       => symbol
+*        => any number of chars.
+{count}  => {10} fixed count
+
+{min , max} => {5, 10}
+
+(?=.------)(?=.------)(?=.------)    => it follow AND oprator (all condittion must true)
+// note : dont give any gap between text
+// inside paranthesis add your criteria(by using above cobination) 
+   if any one is false then result is false.
+
+- by using test() method we check. it predefind method, coming from regex.
+
+eg. refvar.test(data)  => true or false
+
+- two type of validations
+1. implicit validations (with the suport of attribute, browser check validations i.e requird)
+2. explicit
+---
+frm.preventDefault();  // preventDefault() (dont submit data ), default mehtod
+-------------------------------------------------------------------------------
+e.g 1
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=?, initial-scale=1.0">
+    <title>Document object mehtod</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <!--js practice  -->
+<!-- <h3> demo on validation  </h3> -->
+
+<h3>validation</h3>
+
+<input type="text" id="una"> 
+<button onclick="check()">check name</button>
+
+ 
+   <script>
+
+   function check(){
+    const exp = new RegExp(/mohan/);  // user name should contain mohan
+    const exp1 = new RegExp(/mohan/i);// it will ignore uppercase lowercase
+    //or
+    //const exp1 = /mohan/;  // user name should contain mohan. 
+                             // (inside your input mohan required)
+  alert(exp.test(una.value));
+  alert(exp1.test(una.value))
+  // o/p in true or false.
+   }
+ 
+  
+  
+   </script>
+  
+</body>
+</html>
+
+-----------------------------------------
+e.g 2.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>User Registration Form validations </h2>
+    <form action="register.html" method="POST" id="frm">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullName" name="fullname" placeholder="Enter your full name" >
+        <span id="errfna"></span>
+
+        <label for="password">Password:</label>
+        <input type="password" id="pwd" name="password" placeholder="Enter your password" >
+        <span id="errpwd"></span>
+
+        <label for="email">Email ID:</label>
+        <input type="email" id="mail" name="email" placeholder="Enter your email ID" >
+        <span id="errmail"></span>
+
+        <label for="ph">Mobile:</label>
+        <input type="tel" id="ph" name="ph" placeholder="Enter your mobile number" >
+        <span id="errph"></span>
+
+        <label for="pincode">Pincode:</label>
+        <input type="text" id="pin" name="pincode" placeholder="Enter your pincode" >
+        <span id="errpin"></span>
+        <button type="submit" id="sb">Submit</button>
+    </form>
+
+    <script>
+// defining a fun to validate data
+
+//const f=document.forms[0]; // creating form tag object
+
+const f=document.querySelector("#frm");  // creating form tag object
+
+f.addEventListener("submit", checkData);
+
+function checkData(frm){
+// fullname checking
+
+const fna= document.querySelector("#fullName").value; // it return value of input
+const fnaexp= new RegExp(/^[a-zA-Z]*$/);
+
+if(fnaexp.test(fna)===false || fna=== ""){
+
+    document.querySelector("#errfna").innerText=`plz enter a valid name`;
+    frm.preventDefault();  // (dont submit data ), default mehtod
+    // this method stop the  data submition.
+}
+else{
+    document.querySelector("#errfna").innerText=``;// in false contion it print no i.e empty
+}
+
+// phone number checking
+
+const ph= document.querySelector("#ph").value;
+// const phexp= new RegExp(/^ \d{10}*$/);
+const phexp=(/^[6-9]\d{9}$/);  // it will take phone number starting digit 6,7,8,9
+
+if(phexp.test(ph)===false){
+
+    document.querySelector("#errph").innerText=`plz enter a valid phone number`;
+
+    frm.preventDefault();  // (dont submit data ), default mehtod
+}
+else{
+    document.querySelector("#errph").innerText=` `;
+}
+
+// pin number checking
+
+const pc= document.querySelector("#pin").value;
+// const phexp= new RegExp(/^ \d{10}*$/);
+const pcexp=(/^\d{6}$/);
+
+if(pcexp.test(pc)===false){
+
+    document.querySelector("#errpin").innerText=`plz enter a valid pin code`;
+
+    frm.preventDefault();  // (dont submit data ), default mehtod
+}
+else{
+    document.querySelector("#errpin").innerText=` `;
+}
+
+// password checking
+
+const pw= document.querySelector("#pwd").value;
+// const phexp= new RegExp(/^ \d{10}*$/);
+const pwexp=(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$*&%]).{8,20}$/);
+//// note : dont give any gap between text or any reg exp.
+// '.' .{8,20} dot means minimum length of charector (anonymous . legth)
+if(pwexp.test(pw)===false){
+
+    document.querySelector("#errpwd").innerText=`plz enter a valid password`;
+
+    frm.preventDefault();  // (dont submit data ), default mehtod
+}
+else{
+    document.querySelector("#errpwd").innerText=` `;
+}
+
+// email checking
+
+// password checking
+
+
+}
+    </script>
+</body>
+</html>
+-------------
+e.g 3 (stopping cut copy select on webpage on browser)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <style>
+      
+
+    </style>
+</head>
+<body>
+    <h2>stoppin g cut, paste, right click oprations </h2>
+    <p>stoppin g cut, paste, right click oprationsstoppin g cut, paste,
+         right click oprationsstoppin g cut, paste, right click oprationsstoppin
+         g cut, paste, right click oprationsstoppin g cut, paste, right click oprationsstoppin
+          g cut, paste, right click oprations</p>
+
+          <input type="text">
+  
+    <script>
+
+//i want stop copy pste on whole page duet to this i used window object
+window.addEventListener("copy",stopOpe);
+window.addEventListener("paste",stopOpe);
+window.addEventListener("cut",stopOpe);
+window.addEventListener("contextmenu",stopOpe);   // for right copy event is (Oncontextmenu)
+
+
+function stopOpe(win){ //(stopOpe=stop oprartion (only name of function or write anything))
+win.preventDefault();  // for stoppin any action use this method
+alert("this opration not allowed");
+}
+
+or
+
+let w;
+function stopOpe(win){ //(stopOpe=stop oprartion (only name of function or write anything))
+win.preventDefault();  // for stoppin any action use this method
+alert("this opration not allowed");
+w=win;   // it show which opration allowed or not allowed
+}
+
+    </script>
+</body>
+</html>
+
+// note: more validation available on notes kindly check .
+-------------------------------------------------------------------------------
+// (omvir class)session:78 (1.26min) start new concept
+
+// In ecma script support to create the own class and create its object.
+   (class , interface).
+    ## Q . difference between class and interface (in java).
+
+  -   In old days interface is ofr data abstraction but nowdays is differnt.
+
+ -  theory
+ // interface.
+
+class classname{
+    private prop;
+    constructor();{
+        prop init;
+    }
+    methods(normal,generators(getx,setx),static)
+}
+  
+refvar = new className();
+
+e.g
+
+
+// example on definnig a class.js
+
+class User{
+
+    #password;   // private propoerty or private variable declaration in js.
+
+    //prop. initialization
+    constructor(username,password){
+       this._username = username;  //backing field
+        this.password=password;
+    }
+
+    //genarators method
+    get username(){
+        
+        return this._username;
+
+    }
+
+    set username(newusername) {
+        if (newusername.length > 5) {
+            this._username = newusername;
+        } else {
+            console.warn("Username must be longer than 5 characters.");
+        }
+    }
+     
+
+    // noraml method
+    checkPassword(pass){
+        return this.#password===pass; // you use if condition also here.
+    }
+    //static method
+  // without creating object we can call the method.
+  
+    static loginMessage(){
+        return `please login using your creditials`;
+    }
+}
+
+//child class
+
+class Admin extends User    //inheriatace  here one class is derived from other class.
+{
+    constructor(username,password,role){     
+        super(username,password);            // calling parent constructor
+        this.role=role;          
+    }
+
+    //normal method
+
+    displayRole(){
+        document.writeln(`${this.username} is an admin with role : ${this.role}<br>`);
+    }
+}
+
+//html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=?, initial-scale=1.0">
+    <title>Document object mehtod</title>
+    <script src="class.js"></script>
+   <!-- <script>
+    class Sample{
+
+        constructor(){
+            document.write(`constructor <br>`);
+        }
+    }
+   </script> -->
+</head>
+<body>
+    <!--js practice  -->
+<!-- <h3> demo on validation  </h3> -->
+
+<h2>class</h2>
+ 
+   <script>
+// interface.
+
+// const ob = new Sample();
+
+document.write(`${User.loginMessage()}<br>`);   // static method
+
+
+//object created for child class
+const admin = new Admin('rama','ram@123', 'incharge'); // non static method
+
+admin.displayRole();
+
+//genarator method
+
+document.write(`${admin.username}<br>`); //get
+
+admin.username = "mohan";  //set
+
+document.write(`${admin.username}<br>`); //get
+
+
+
+
+document.write (`${admin.checkPassword('sma')}<br>`);
+
+
+document.write(`${admin.password}<br>`); //privat property
+
+document.write(`${admin.role}<br>`); //public property
+
+
+   </script>
+  
+</body>
+</html>
+
+
+
+
+// bootstrap session 76 1:1 min.
+
+// framwork means it is already devloped , it is templet.
+// in bootstrap we can not devlope custom design.
+// in bootstrap we just calling or used.
+// framework is redimade classes.
+
+// thousands of selectors they devloped and collect in single place called library.
+// toatal 4technolgy used to devlope bootsrap,
+   i.e css, js, pooper, jquery
+
+============================================
+## omvir js seeion info.
+
+- session 28  : css start.
+- session 42 : js start
+
+- session 58 (array start)
+
+## dom  session: 71
+- 72 session (getter method)
+- 73 session (1:40min bill example)
+- 74 session (1:45min)bom start
+
